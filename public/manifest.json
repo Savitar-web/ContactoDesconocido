@@ -1,0 +1,9 @@
+{
+  "name": "Contacto Desconocido",
+  "short_name": "Winteres",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#050814",
+  "theme_color": "#050814",
+  "icons": [{ "src": "icons/winteres.jpg", "sizes": "512x512", "type": "image/jpeg" }]
+}

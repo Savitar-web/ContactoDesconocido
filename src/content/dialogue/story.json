@@ -1,0 +1,4587 @@
+{
+ "characters": [
+  {
+   "id": "mateo",
+   "name": "Mateo Rivas",
+   "age": 22,
+   "role": "Ingeniería",
+   "status": "El primero en escribirte",
+   "bio": "Amable, protector y demasiado dispuesto a resolver los problemas ajenos. Estudia ingeniería y trabaja medio tiempo en una papelería del campus.",
+   "color": "#7eb6ff",
+   "online": true,
+   "orientation": "Heterosexual",
+   "interests": [
+    "Fútbol",
+    "Reparar cosas",
+    "Café"
+   ]
+  },
+  {
+   "id": "diego",
+   "name": "Diego Solano",
+   "age": 22,
+   "role": "Ingeniería",
+   "status": "Compañero de Mateo",
+   "bio": "Directo, leal y con poca paciencia para los rodeos. Si confía, se queda. Si siente que lo usan, cierra la puerta.",
+   "color": "#8b93ff",
+   "online": true,
+   "orientation": "Heterosexual",
+   "interests": [
+    "Videojuegos",
+    "Talleres",
+    "Música"
+   ]
+  },
+  {
+   "id": "antonio",
+   "name": "Antonio Herrera",
+   "age": 21,
+   "role": "Derecho",
+   "status": "Siempre tiene una versión",
+   "bio": "Orgulloso, elocuente y rápido para sentirse juzgado. Defiende a los suyos, pero odia quedar en evidencia.",
+   "color": "#ff9a72",
+   "online": false,
+   "orientation": "Heterosexual",
+   "interests": [
+    "Debate",
+    "Ropa",
+    "Política"
+   ]
+  },
+  {
+   "id": "angela",
+   "name": "Ángela Vidal",
+   "age": 20,
+   "role": "Psicología",
+   "status": "Escucha antes de opinar",
+   "bio": "Cálida y precisa. Nota lo que otros pasan por alto, aunque a veces se calla demasiado tiempo.",
+   "color": "#d2b4ff",
+   "online": true,
+   "orientation": "Bisexual",
+   "interests": [
+    "Cine",
+    "Libros",
+    "Café"
+   ]
+  },
+  {
+   "id": "sofia",
+   "name": "Sofía León",
+   "age": 21,
+   "role": "Diseño",
+   "status": "Siempre con la cámara",
+   "bio": "Independiente, irónica y difícil de impresionar. Documenta todo, incluso cuando dice que no.",
+   "color": "#ff9ec8",
+   "online": true,
+   "orientation": "Heterosexual",
+   "interests": [
+    "Fotografía",
+    "Viajes",
+    "Música"
+   ]
+  },
+  {
+   "id": "lucia",
+   "name": "Lucía Navarro",
+   "age": 20,
+   "role": "Medicina",
+   "status": "Guarda más de lo que cuenta",
+   "bio": "Estudiosa, cuidadosa y con un sentido del deber que a veces la aplasta. No miente bien.",
+   "color": "#7ee0c6",
+   "online": false,
+   "orientation": "Heterosexual",
+   "interests": [
+    "Hospital",
+    "Series",
+    "Cocina"
+   ]
+  },
+  {
+   "id": "valeria",
+   "name": "Valeria Cruz",
+   "age": 23,
+   "role": "Periodismo",
+   "status": "Junta piezas",
+   "bio": "Observadora y poco sentimental en público. Cree que una contradicción vale más que una disculpa.",
+   "color": "#f0d38a",
+   "online": true,
+   "orientation": "Lesbiana",
+   "interests": [
+    "Archivos",
+    "Radio",
+    "Noche"
+   ]
+  },
+  {
+   "id": "martina",
+   "name": "Martina Ortega",
+   "age": 19,
+   "role": "Letras",
+   "status": "Tarda en contestar",
+   "bio": "Reservada, inteligente y acostumbrada a no ocupar espacio. La familia de Iván es también la suya.",
+   "color": "#b7c4ff",
+   "online": false,
+   "orientation": "Heterosexual",
+   "interests": [
+    "Poesía",
+    "Biblioteca",
+    "Té"
+   ]
+  },
+  {
+   "id": "ivan",
+   "name": "Iván Paredes",
+   "age": 23,
+   "role": "Trabaja de noche",
+   "status": "Entra y sale del grupo",
+   "bio": "Imprevisible, gracioso cuando quiere y esquivo cuando le conviene. Debe dinero y no lo dice.",
+   "color": "#ff7a9c",
+   "online": false,
+   "orientation": "Heterosexual",
+   "interests": [
+    "Coches",
+    "Noche",
+    "Música"
+   ]
+  }
+ ],
+ "chapters": [
+  {
+   "n": 1,
+   "title": "Una nueva comunidad",
+   "start": "c1a",
+   "blurb": "Mateo escribe primero. El edificio, el número y La Colmena."
+  },
+  {
+   "n": 2,
+   "title": "Personas desconocidas",
+   "start": "c2a",
+   "blurb": "Diego, Sofía, Lucía, Antonio y el mapa de Valeria."
+  },
+  {
+   "n": 3,
+   "title": "Confianza",
+   "start": "c3a",
+   "blurb": "Una entrega, un hermano, una prima y una deuda."
+  },
+  {
+   "n": 4,
+   "title": "La noche",
+   "start": "c4a",
+   "blurb": "La pijamada se queda en el chat. Mateo sale por sodas."
+  },
+  {
+   "n": 5,
+   "title": "Desaparición",
+   "start": "c5a",
+   "blurb": "Horas, una van y versiones que no encajan."
+  },
+  {
+   "n": 6,
+   "title": "Versiones contradictorias",
+   "start": "c6a",
+   "blurb": "Foto, cámara reiniciada, álibi privado, turno falso."
+  },
+  {
+   "n": 7,
+   "title": "Secretos",
+   "start": "c7a",
+   "blurb": "La lista, la caja y el audio de las 22:36."
+  },
+  {
+   "n": 8,
+   "title": "Punto de ruptura",
+   "start": "c8a",
+   "blurb": "El grupo pide un culpable. Llega un número sin nombre."
+  },
+  {
+   "n": 9,
+   "title": "La verdad",
+   "start": "c9a",
+   "blurb": "La bodega de la 12. Mateo, la lista y la llamada."
+  },
+  {
+   "n": 10,
+   "title": "Consecuencias",
+   "start": "c10a",
+   "blurb": "Lo que cada quien puede sostener después."
+  },
+  {
+   "n": 11,
+   "title": "Lo que queda",
+   "start": "c11a",
+   "blurb": "El laboratorio, la pasta y el archivo que no se publicó."
+  },
+  {
+   "n": 12,
+   "title": "Algo permanece",
+   "start": "c12a",
+   "blurb": "Una inicial, un encargo y el atajo de día."
+  }
+ ],
+ "nodes": {
+  "c1a": {
+   "chat": "mateo",
+   "incoming": [
+    {
+     "who": "mateo",
+     "text": "Hola. Perdón si esto sale de la nada. Soy Mateo, del 4.° B de Ingeniería. Vi que te mudaste al edificio de enfrente, el de los laureles."
+    },
+    {
+     "who": "mateo",
+     "text": "La administración pasó una lista de vecinos nuevos y tu nombre estaba ahí. No suelo escribirle a desconocidos, pero esta colonia es rara si llegas solo."
+    }
+   ],
+   "choices": [
+    {
+     "text": "Hola, Mateo. Gracias por escribir. Sí, llegué hace dos días y todavía no ubico ni la tienda.",
+     "next": "c1b",
+     "fx": {
+      "mateo": {
+       "trust": 2,
+       "close": 1
+      }
+     }
+    },
+    {
+     "text": "¿Y cómo conseguiste mi número exactamente? La lista no debería incluir teléfonos.",
+     "next": "c1b",
+     "fx": {
+      "mateo": {
+       "trust": 1,
+       "tension": 1
+      }
+     },
+     "flag": "asked_number"
+    },
+    {
+     "text": "Está bien. No prometo ser la mejor compañía, pero puedes hablar.",
+     "next": "c1b",
+     "fx": {
+      "mateo": {
+       "close": 2
+      }
+     }
+    },
+    {
+     "text": "No estoy buscando grupo. Prefiero acomodarme primero.",
+     "next": "c1b",
+     "fx": {
+      "mateo": {
+       "trust": -1,
+       "tension": 1
+      }
+     },
+     "flag": "cold_open"
+    }
+   ],
+   "chapter": 1,
+   "title": "El primer mensaje"
+  },
+  "c1b": {
+   "chat": "mateo",
+   "incoming": [
+    {
+     "who": "mateo",
+     "text": "Justo. El número lo dejó la caseta porque pediste el código del portón. Si te incomoda, lo borro. No era la idea empezar mal."
+    },
+    {
+     "who": "mateo",
+     "text": "Esta noche unos amigos iban a hacer pijamada en casa de Diego. Varios cancelaron. Quedó en verse por un grupo de Winteres, La Colmena. Si quieres, te paso el enlace. Sin presión."
+    }
+   ],
+   "choices": [
+    {
+     "text": "Pásame el grupo. Prefiero conocerlos así antes de aparecer en una sala.",
+     "next": "c1c",
+     "fx": {
+      "mateo": {
+       "trust": 2,
+       "close": 1
+      }
+     },
+     "flag": "joined_hive"
+    },
+    {
+     "text": "Puedo entrar, pero voy a observar un rato. No me gusta forzarlo.",
+     "next": "c1c",
+     "fx": {
+      "mateo": {
+       "trust": 1
+      }
+     }
+    },
+    {
+     "text": "¿Por qué yo? Hay veinte departamentos en este edificio.",
+     "next": "c1c",
+     "fx": {
+      "mateo": {
+       "trust": 1,
+       "tension": 1
+      }
+     }
+    },
+    {
+     "text": "Hoy no. Si insiste el grupo, ya veré mañana.",
+     "next": "c1c",
+     "fx": {
+      "mateo": {
+       "close": -1
+      }
+     },
+     "flag": "declined_first"
+    }
+   ],
+   "chapter": 1,
+   "title": ""
+  },
+  "c1c": {
+   "chat": "mateo",
+   "incoming": [
+    {
+     "who": "mateo",
+     "text": "Porque ayer ayudaste a la señora del 3 a subir unas cajas y no hiciste un show. Aquí eso se nota. La gente suele mirar el celular y seguir."
+    },
+    {
+     "who": "mateo",
+     "text": "Te mando el grupo. Si alguien se pone intenso, me dices. Diego es brusco, Ángela es la que ordena el caos, y Sofía fotografía todo lo que se mueve."
+    }
+   ],
+   "choices": [
+    {
+     "text": "Entonces gracias por el contexto. Voy a entrar.",
+     "next": "c1d",
+     "fx": {
+      "mateo": {
+       "trust": 2,
+       "close": 2
+      }
+     }
+    },
+    {
+     "text": "Anotado. Diego brusco, Ángela orden, Sofía cámara. Ya tengo el mapa.",
+     "next": "c1d",
+     "fx": {
+      "mateo": {
+       "trust": 1
+      }
+     },
+     "flag": "mapped_group"
+    },
+    {
+     "text": "No necesito que me cuides, pero se agradece el aviso.",
+     "next": "c1d",
+     "fx": {
+      "mateo": {
+       "close": 1,
+       "tension": 1
+      }
+     }
+    },
+    {
+     "text": "Si esto es una bienvenida con agenda, dímelo ahora.",
+     "next": "c1d",
+     "fx": {
+      "mateo": {
+       "tension": 2,
+       "trust": -1
+      }
+     }
+    }
+   ],
+   "chapter": 1,
+   "title": ""
+  },
+  "c1d": {
+   "chat": "angela",
+   "incoming": [
+    {
+     "who": "angela",
+     "text": "Ángela. Mateo me pasó tu contacto antes de meterte al grupo, para que no llegaras a ciegas. Hola."
+    },
+    {
+     "who": "angela",
+     "text": "Si te sirve: no tienes que contar tu vida hoy. Con decir de dónde vienes y qué estudias basta. El resto se gana."
+    }
+   ],
+   "choices": [
+    {
+     "text": "Hola, Ángela. Estudio y acabo de llegar. Voy con calma.",
+     "next": "c1e",
+     "fx": {
+      "angela": {
+       "trust": 2,
+       "close": 1
+      }
+     }
+    },
+    {
+     "text": "Gracias por el aviso. Mateo habla de ustedes como si ya fuéramos mesa.",
+     "next": "c1e",
+     "fx": {
+      "angela": {
+       "trust": 1
+      }
+     }
+    },
+    {
+     "text": "Prefiero que me hablen directo. Los prólogos me ponen nervioso.",
+     "next": "c1e",
+     "fx": {
+      "angela": {
+       "tension": 1,
+       "trust": 1
+      }
+     }
+    },
+    {
+     "text": "No prometo quedarme en el grupo si se pone raro.",
+     "next": "c1e",
+     "fx": {
+      "angela": {
+       "trust": 1,
+       "tension": 1
+      }
+     },
+     "flag": "guarded_angela"
+    }
+   ],
+   "chapter": 1,
+   "title": ""
+  },
+  "c1e": {
+   "chat": "angela",
+   "incoming": [
+    {
+     "who": "angela",
+     "text": "Normal. Mateo adopta gente. No es mala intención, es costumbre. A los doce ya organizaba los recreos para que nadie se quedara en la banca."
+    },
+    {
+     "who": "angela",
+     "text": "Una cosa, y la digo una vez: si alguien te pide dinero, fotos o que guardes un secreto el primer día, no lo hagas por encajar."
+    }
+   ],
+   "choices": [
+    {
+     "text": "Lo tendré en cuenta. Gracias por decirlo sin drama.",
+     "next": "c1f",
+     "fx": {
+      "angela": {
+       "trust": 2,
+       "close": 1
+      }
+     },
+     "flag": "angela_warning"
+    },
+    {
+     "text": "¿Eso pasa aquí seguido?",
+     "next": "c1f",
+     "fx": {
+      "angela": {
+       "trust": 1
+      }
+     },
+     "flag": "asked_secrets"
+    },
+    {
+     "text": "Sueno capaz de cuidarme. Pero oí el consejo.",
+     "next": "c1f",
+     "fx": {
+      "angela": {
+       "close": 1
+      }
+     }
+    },
+    {
+     "text": "Demasiado pronto para advertencias. Apenas llegué.",
+     "next": "c1f",
+     "fx": {
+      "angela": {
+       "tension": 2,
+       "trust": -1
+      }
+     }
+    }
+   ],
+   "chapter": 1,
+   "title": ""
+  },
+  "c1f": {
+   "chat": "group",
+   "incoming": [
+    {
+     "who": "mateo",
+     "text": "Gente, les presento a quien llegó al edificio de enfrente. Va a leer un rato, no lo entrevisten."
+    },
+    {
+     "who": "diego",
+     "text": "Bien. Regla de la casa: si vas a cancelar, cancela antes de las ocho. Hoy ya van tres."
+    },
+    {
+     "who": "sofia",
+     "text": "Yo no cancelo. Llevo la cámara. Si alguien sale ridículo, es archivo histórico."
+    }
+   ],
+   "choices": [
+    {
+     "text": "Hola a todos. Gracias por el hueco. Prometo no entrevistarme solo.",
+     "next": "c1g",
+     "fx": {
+      "diego": {
+       "trust": 1
+      },
+      "sofia": {
+       "close": 1
+      },
+      "mateo": {
+       "trust": 1
+      }
+     }
+    },
+    {
+     "text": "Hola. Voy a mirar cómo se hablan antes de meterme.",
+     "next": "c1g",
+     "fx": {
+      "valeria": {
+       "trust": 1
+      },
+      "angela": {
+       "trust": 1
+      }
+     }
+    },
+    {
+     "text": "Diego, apunto la regla. Sofía, la cámara la negociamos.",
+     "next": "c1g",
+     "fx": {
+      "diego": {
+       "trust": 2
+      },
+      "sofia": {
+       "tension": 1,
+       "close": 1
+      }
+     }
+    },
+    {
+     "text": "No hace falta presentación. Si encajo, se nota.",
+     "next": "c1g",
+     "fx": {
+      "diego": {
+       "tension": 1
+      },
+      "mateo": {
+       "tension": 1
+      }
+     }
+    }
+   ],
+   "chapter": 1,
+   "title": "La Colmena"
+  },
+  "c1g": {
+   "chat": "group",
+   "incoming": [
+    {
+     "who": "lucia",
+     "text": "Hola. Perdón el retraso, salí de guardia simulada. Bienvenido, bienvenida, lo que corresponda."
+    },
+    {
+     "who": "valeria",
+     "text": "Valeria. Si Mateo te trajo, algo vio. No siempre acierta, pero casi."
+    },
+    {
+     "who": "martina",
+     "text": "Hola."
+    },
+    {
+     "who": "ivan",
+     "text": "Llego tarde y me voy temprano. No se ofendan, el turno de noche no pide permiso."
+    }
+   ],
+   "choices": [
+    {
+     "text": "Un gusto. No hace falta que todos hablen a la vez.",
+     "next": "c1end",
+     "fx": {
+      "lucia": {
+       "trust": 1
+      },
+      "martina": {
+       "trust": 1
+      }
+     }
+    },
+    {
+     "text": "Iván, turno de noche anotado. Martina, hola también.",
+     "next": "c1end",
+     "fx": {
+      "ivan": {
+       "close": 1
+      },
+      "martina": {
+       "trust": 2
+      }
+     }
+    },
+    {
+     "text": "Valeria, me interesa cómo mides un acierto.",
+     "next": "c1end",
+     "fx": {
+      "valeria": {
+       "trust": 2,
+       "close": 1
+      }
+     }
+    },
+    {
+     "text": "Esto ya es mucha gente para un jueves. Los leo mañana.",
+     "next": "c1end",
+     "fx": {
+      "group": {
+       "tension": 1
+      }
+     }
+    }
+   ],
+   "chapter": 1,
+   "title": ""
+  },
+  "c1end": {
+   "chat": "mateo",
+   "incoming": [
+    {
+     "who": "mateo",
+     "text": "Sobreviviste al grupo. Mañana, si quieres, te enseño el atajo a la uni para no dar la vuelta al periférico."
+    },
+    {
+     "who": "mateo",
+     "text": "Y si en algún momento esto te sobra, lo dices. No colecciono gente."
+    }
+   ],
+   "choices": [
+    {
+     "text": "El atajo me sirve. Mañana te escribo.",
+     "next": "c2a",
+     "fx": {
+      "mateo": {
+       "trust": 2,
+       "close": 2
+      }
+     },
+     "flag": "accepted_walk"
+    },
+    {
+     "text": "Voy por mi cuenta, pero gracias. El gesto cuenta.",
+     "next": "c2a",
+     "fx": {
+      "mateo": {
+       "trust": 1
+      }
+     }
+    },
+    {
+     "text": "Primero quiero ubicar a los demás. El mapa todavía está borroso.",
+     "next": "c2a",
+     "fx": {
+      "mateo": {
+       "trust": 1
+      },
+      "valeria": {
+       "trust": 1
+      }
+     }
+    },
+    {
+     "text": "No me acostumbres a que resuelvas todo. Puedo caminar.",
+     "next": "c2a",
+     "fx": {
+      "mateo": {
+       "tension": 1,
+       "close": 1
+      }
+     }
+    }
+   ],
+   "chapter": 1,
+   "title": ""
+  },
+  "c2a": {
+   "chat": "diego",
+   "incoming": [
+    {
+     "who": "diego",
+     "text": "Mateo me dijo que quizá caminas con él. Te aviso: llega diez minutos antes y se preocupa si no contestas un «ya voy»."
+    },
+    {
+     "who": "diego",
+     "text": "No es control. Es que una vez un compañero no avisó y resultó que se había quedado dormido en el camión. Desde entonces confirma todo."
+    }
+   ],
+   "choices": [
+    {
+     "text": "Entendido. Confirmo cuando salga.",
+     "next": "c2b",
+     "fx": {
+      "diego": {
+       "trust": 2
+      },
+      "mateo": {
+       "trust": 1
+      }
+     }
+    },
+    {
+     "text": "Un poco intenso para un trayecto de veinte minutos.",
+     "next": "c2b",
+     "fx": {
+      "diego": {
+       "tension": 1,
+       "trust": 1
+      }
+     }
+    },
+    {
+     "text": "¿Y tú cómo lo aguantas todos los días?",
+     "next": "c2b",
+     "fx": {
+      "diego": {
+       "close": 2
+      }
+     }
+    },
+    {
+     "text": "No necesito manual de Mateo. Ya lo iré viendo.",
+     "next": "c2b",
+     "fx": {
+      "diego": {
+       "tension": 2
+      }
+     }
+    }
+   ],
+   "chapter": 2,
+   "title": "Personas distintas"
+  },
+  "c2b": {
+   "chat": "diego",
+   "incoming": [
+    {
+     "who": "diego",
+     "text": "Lo aguanto porque cuando mi viejo estuvo en el hospital, Mateo se quedó en la sala sin pedir nada. Hay gente que habla y gente que se sienta. Él se sienta."
+    },
+    {
+     "who": "diego",
+     "text": "Si buscas el chisme: Antonio y yo no nos llevamos. No es odio. Es que él convierte todo en un juicio y yo no tengo ganas de declarar."
+    }
+   ],
+   "choices": [
+    {
+     "text": "Gracias por contarlo. Cambia el tono del grupo.",
+     "next": "c2c",
+     "fx": {
+      "diego": {
+       "trust": 2,
+       "close": 2
+      }
+     },
+     "flag": "diego_hospital"
+    },
+    {
+     "text": "Antonio anotado. No voy a meterme en ese pleito.",
+     "next": "c2c",
+     "fx": {
+      "diego": {
+       "trust": 1
+      }
+     }
+    },
+    {
+     "text": "Lealtad así también puede volverse ciega.",
+     "next": "c2c",
+     "fx": {
+      "diego": {
+       "tension": 2,
+       "trust": 1
+      }
+     },
+     "flag": "warned_diego"
+    },
+    {
+     "text": "Cada quien con su historia. Yo vengo en blanco.",
+     "next": "c2c",
+     "fx": {
+      "diego": {
+       "close": 1
+      }
+     }
+    }
+   ],
+   "chapter": 2,
+   "title": ""
+  },
+  "c2c": {
+   "chat": "sofia",
+   "incoming": [
+    {
+     "who": "sofia",
+     "text": "Te mandé una foto del patio de atrás. No es arte: es para que veas que el portón de servicio no cierra bien. Mateo dice que lo reporte. Yo digo que primero lo documente."
+    },
+    {
+     "who": "sofia",
+     "text": "Si te molesta salir en fotos, dímelo ya. En el grupo hay quien posa y quien se esconde detrás del vaso."
+    }
+   ],
+   "choices": [
+    {
+     "text": "Sin mi cara en fotos, por ahora. El portón sí me importa.",
+     "next": "c2d",
+     "fx": {
+      "sofia": {
+       "trust": 2
+      }
+     },
+     "flag": "no_photos"
+    },
+    {
+     "text": "Puedes fotografiar el lugar. A mí, pregunta antes.",
+     "next": "c2d",
+     "fx": {
+      "sofia": {
+       "trust": 2,
+       "close": 1
+      }
+     }
+    },
+    {
+     "text": "Mándame lo del portón. Quiero ver el ángulo.",
+     "next": "c2d",
+     "fx": {
+      "sofia": {
+       "trust": 1
+      }
+     },
+     "flag": "saw_gate"
+    },
+    {
+     "text": "Borra lo que tengas mío. No negociamos eso.",
+     "next": "c2d",
+     "fx": {
+      "sofia": {
+       "tension": 2,
+       "trust": -1
+      }
+     }
+    }
+   ],
+   "chapter": 2,
+   "title": ""
+  },
+  "c2d": {
+   "chat": "sofia",
+   "incoming": [
+    {
+     "who": "sofia",
+     "text": "Hecho. El portón se ve a las 19:12, con la cadena suelta. No es la gran pista de nada. Es una costumbre: si algo cambia, yo ya tengo el antes."
+    },
+    {
+     "who": "sofia",
+     "text": "Lucía te va a caer bien o te va a parecer de otro planeta. Estudia medicina y contesta como si cada mensaje fuera un parte."
+    }
+   ],
+   "choices": [
+    {
+     "text": "El antes sirve. Guárdalo.",
+     "next": "c2e",
+     "fx": {
+      "sofia": {
+       "trust": 2
+      }
+     },
+     "flag": "sofia_archive"
+    },
+    {
+     "text": "Me interesa Lucía. La saludo yo.",
+     "next": "c2e",
+     "fx": {
+      "lucia": {
+       "close": 1
+      },
+      "sofia": {
+       "trust": 1
+      }
+     }
+    },
+    {
+     "text": "Documentar todo también puede ser una forma de no estar.",
+     "next": "c2e",
+     "fx": {
+      "sofia": {
+       "tension": 1,
+       "close": 1
+      }
+     }
+    },
+    {
+     "text": "No necesito reseñas. Los voy conociendo.",
+     "next": "c2e",
+     "fx": {
+      "sofia": {
+       "tension": 1
+      }
+     }
+    }
+   ],
+   "chapter": 2,
+   "title": ""
+  },
+  "c2e": {
+   "chat": "lucia",
+   "incoming": [
+    {
+     "who": "lucia",
+     "text": "Sofía avisó que quizá te escribía. Hola. Perdón si sueno formal: vengo de un simulacro y todavía pienso en listas."
+    },
+    {
+     "who": "lucia",
+     "text": "Si te sientes mal en la colonia, la clínica de la uni atiende sin cita los martes. Lo digo por si llegaste sin médico, no porque te vea frágil."
+    }
+   ],
+   "choices": [
+    {
+     "text": "Se agradece el dato, sin el diagnóstico. Hola, Lucía.",
+     "next": "c2f",
+     "fx": {
+      "lucia": {
+       "trust": 2,
+       "close": 1
+      }
+     }
+    },
+    {
+     "text": "Formal está bien. Prefiero claro a simpático vacío.",
+     "next": "c2f",
+     "fx": {
+      "lucia": {
+       "trust": 2
+      }
+     }
+    },
+    {
+     "text": "¿Siempre cuidas a gente que acabas de conocer?",
+     "next": "c2f",
+     "fx": {
+      "lucia": {
+       "close": 1,
+       "tension": 1
+      }
+     }
+    },
+    {
+     "text": "Estoy bien. No hace falta la clínica en el saludo.",
+     "next": "c2f",
+     "fx": {
+      "lucia": {
+       "tension": 1
+      }
+     }
+    }
+   ],
+   "chapter": 2,
+   "title": ""
+  },
+  "c2f": {
+   "chat": "lucia",
+   "incoming": [
+    {
+     "who": "lucia",
+     "text": "No siempre. Se me sale. En mi casa, si nadie pregunta, nadie come. Costumbre mala de hija mayor."
+    },
+    {
+     "who": "lucia",
+     "text": "Antonio a veces habla por mí en el grupo. Si lo ves, no es que seamos lo mismo. Solo… nos conocemos de antes."
+    }
+   ],
+   "choices": [
+    {
+     "text": "Entonces te pregunto a ti, no a él.",
+     "next": "c2g",
+     "fx": {
+      "lucia": {
+       "trust": 2,
+       "close": 2
+      }
+     },
+     "flag": "lucia_direct"
+    },
+    {
+     "text": "«Nos conocemos de antes» puede significar muchas cosas.",
+     "next": "c2g",
+     "fx": {
+      "lucia": {
+       "tension": 1,
+       "trust": 1
+      }
+     },
+     "flag": "lucia_hint"
+    },
+    {
+     "text": "Antonio no me define a nadie.",
+     "next": "c2g",
+     "fx": {
+      "lucia": {
+       "trust": 1
+      },
+      "antonio": {
+       "tension": 1
+      }
+     }
+    },
+    {
+     "text": "No voy a meterme en historias viejas.",
+     "next": "c2g",
+     "fx": {
+      "lucia": {
+       "close": -1
+      }
+     }
+    }
+   ],
+   "chapter": 2,
+   "title": ""
+  },
+  "c2g": {
+   "chat": "antonio",
+   "incoming": [
+    {
+     "who": "antonio",
+     "text": "Antonio Herrera. Derecho. Mateo ya hizo su número de recepción, así que me ahorro el discurso."
+    },
+    {
+     "who": "antonio",
+     "text": "Un consejo que no pediste: no le cuentes a Diego nada que no quieras repetido con buena intención. Y no le pidas a Sofía que borre algo. Lo archiva peor."
+    }
+   ],
+   "choices": [
+    {
+     "text": "Consejo recibido. Yo también miro antes de firmar.",
+     "next": "c2end",
+     "fx": {
+      "antonio": {
+       "trust": 1,
+       "close": 1
+      }
+     }
+    },
+    {
+     "text": "Suena a alguien que ya perdió una conversación.",
+     "next": "c2end",
+     "fx": {
+      "antonio": {
+       "tension": 2,
+       "trust": 1
+      }
+     },
+     "flag": "poked_antonio"
+    },
+    {
+     "text": "Prefiero juzgarlos yo. Gracias igual.",
+     "next": "c2end",
+     "fx": {
+      "antonio": {
+       "trust": 1
+      }
+     }
+    },
+    {
+     "text": "Si vamos a competir por el control del grupo, avisa.",
+     "next": "c2end",
+     "fx": {
+      "antonio": {
+       "tension": 2
+      }
+     }
+    }
+   ],
+   "chapter": 2,
+   "title": ""
+  },
+  "c2end": {
+   "chat": "valeria",
+   "incoming": [
+    {
+     "who": "valeria",
+     "text": "Vi el hilo. No te unas a un bando el segundo día. Antonio colecciona aliados y Diego colecciona lealtades. Las dos cosas pesan."
+    },
+    {
+     "who": "valeria",
+     "text": "Si quieres una lectura útil: Mateo invita, Ángela traduce, Sofía registra, Lucía cuida, Iván desaparece. Martina casi no existe en el chat y eso, aquí, es un dato."
+    }
+   ],
+   "choices": [
+    {
+     "text": "Martina como dato. Lo guardo.",
+     "next": "c3a",
+     "fx": {
+      "valeria": {
+       "trust": 2
+      },
+      "martina": {
+       "trust": 1
+      }
+     },
+     "flag": "noticed_martina"
+    },
+    {
+     "text": "No me uno a bandos. Observo.",
+     "next": "c3a",
+     "fx": {
+      "valeria": {
+       "trust": 2,
+       "close": 1
+      }
+     }
+    },
+    {
+     "text": "Leerte el grupo tan rápido también es una posición.",
+     "next": "c3a",
+     "fx": {
+      "valeria": {
+       "tension": 1,
+       "close": 1
+      }
+     }
+    },
+    {
+     "text": "Demasiado esquema para gente real.",
+     "next": "c3a",
+     "fx": {
+      "valeria": {
+       "tension": 1
+      }
+     }
+    }
+   ],
+   "chapter": 2,
+   "title": ""
+  },
+  "c3a": {
+   "chat": "mateo",
+   "incoming": [
+    {
+     "who": "mateo",
+     "text": "Oye. Hoy en la papelería vi a Iván discutiendo por teléfono. No es asunto mío, pero dijo «si no llega hoy, no hay entrega». Colgó cuando me vio."
+    },
+    {
+     "who": "mateo",
+     "text": "No se lo conté al grupo. Iván ya carga con fama de raro y no quiero sumarle un rumor. Te lo digo porque anoche preguntaste cómo funcionan las cosas aquí."
+    }
+   ],
+   "choices": [
+    {
+     "text": "Gracias por no convertirlo en chisme. ¿A qué hora fue?",
+     "next": "c3b",
+     "fx": {
+      "mateo": {
+       "trust": 2
+      }
+     },
+     "flag": "heard_delivery"
+    },
+    {
+     "text": "Debiste decirlo en el grupo. Los secretos de ese tipo pudren.",
+     "next": "c3b",
+     "fx": {
+      "mateo": {
+       "tension": 1,
+       "trust": 1
+      }
+     }
+    },
+    {
+     "text": "Puede ser una entrega de trabajo. No lo conviertas en caso.",
+     "next": "c3b",
+     "fx": {
+      "mateo": {
+       "trust": 1
+      }
+     }
+    },
+    {
+     "text": "No me metas en lo de Iván. Apenas lo conozco.",
+     "next": "c3b",
+     "fx": {
+      "mateo": {
+       "close": -1
+      }
+     }
+    }
+   ],
+   "chapter": 3,
+   "title": "Lo que no se dice"
+  },
+  "c3b": {
+   "chat": "mateo",
+   "incoming": [
+    {
+     "who": "mateo",
+     "text": "Como a las seis. Y sí, puede ser nada. Por eso no lo publiqué. A veces me paso de protector y después tengo que pedir perdón."
+    },
+    {
+     "who": "mateo",
+     "text": "Mi hermano mayor se fue de la casa a los diecisiete y nadie preguntó a tiempo. Desde entonces pregunto de más. Defecto declarado."
+    }
+   ],
+   "choices": [
+    {
+     "text": "Preguntar de más salvó a alguien, seguro. No te disculpes por eso.",
+     "next": "c3c",
+     "fx": {
+      "mateo": {
+       "trust": 2,
+       "close": 2
+      }
+     },
+     "flag": "mateo_brother"
+    },
+    {
+     "text": "Entiendo el origen. También puede asfixiar.",
+     "next": "c3c",
+     "fx": {
+      "mateo": {
+       "trust": 1,
+       "tension": 1
+      }
+     }
+    },
+    {
+     "text": "Gracias por contármelo. No lo uso en el grupo.",
+     "next": "c3c",
+     "fx": {
+      "mateo": {
+       "trust": 2
+      }
+     }
+    },
+    {
+     "text": "No me debes tu historia familiar.",
+     "next": "c3c",
+     "fx": {
+      "mateo": {
+       "close": -1,
+       "tension": 1
+      }
+     }
+    }
+   ],
+   "chapter": 3,
+   "title": ""
+  },
+  "c3c": {
+   "chat": "angela",
+   "incoming": [
+    {
+     "who": "angela",
+     "text": "Mateo te contó lo del teléfono, ¿verdad? No hace falta que confirmes. Se le nota en la cara cuando carga un secreto pequeño."
+    },
+    {
+     "who": "angela",
+     "text": "Yo también lo oí, de lejos. No intervine. Si cada discusión de Iván es una alarma, vivimos en alarma."
+    }
+   ],
+   "choices": [
+    {
+     "text": "Entonces somos tres sabiéndolo y nadie hablando.",
+     "next": "c3d",
+     "fx": {
+      "angela": {
+       "trust": 2
+      }
+     },
+     "flag": "three_know"
+    },
+    {
+     "text": "Hiciste bien en no escalarlo.",
+     "next": "c3d",
+     "fx": {
+      "angela": {
+       "trust": 1,
+       "close": 1
+      }
+     }
+    },
+    {
+     "text": "Callarse también es una decisión con coste.",
+     "next": "c3d",
+     "fx": {
+      "angela": {
+       "tension": 1,
+       "trust": 1
+      }
+     }
+    },
+    {
+     "text": "No confirmo lo que Mateo me dijo.",
+     "next": "c3d",
+     "fx": {
+      "angela": {
+       "trust": 2
+      },
+      "mateo": {
+       "trust": 1
+      }
+     },
+     "flag": "kept_mateo_secret"
+    }
+   ],
+   "chapter": 3,
+   "title": ""
+  },
+  "c3d": {
+   "chat": "angela",
+   "incoming": [
+    {
+     "who": "angela",
+     "text": "Sí. Y te digo algo personal, porque ayer no te pedí nada: estoy cansada de ser la que traduce al grupo. A veces quiero una conversación que no sea mantenimiento."
+    },
+    {
+     "who": "angela",
+     "text": "Si un día no contesto, no es castigo. Es que me quedé sin palabras útiles."
+    }
+   ],
+   "choices": [
+    {
+     "text": "Entonces hoy no te pido que traduzcas. ¿Cómo estás tú?",
+     "next": "c3e",
+     "fx": {
+      "angela": {
+       "close": 2,
+       "trust": 2
+      }
+     }
+    },
+    {
+     "text": "Puedes no ser útil conmigo. Se permite.",
+     "next": "c3e",
+     "fx": {
+      "angela": {
+       "close": 2,
+       "trust": 1
+      }
+     }
+    },
+    {
+     "text": "El grupo te usa de centro. Eso se puede decir en voz alta.",
+     "next": "c3e",
+     "fx": {
+      "angela": {
+       "trust": 1,
+       "tension": 1
+      }
+     }
+    },
+    {
+     "text": "Avísame cuando vuelvas. No voy a perseguirte.",
+     "next": "c3e",
+     "fx": {
+      "angela": {
+       "trust": 1
+      }
+     }
+    }
+   ],
+   "chapter": 3,
+   "title": ""
+  },
+  "c3e": {
+   "chat": "martina",
+   "incoming": [
+    {
+     "who": "martina",
+     "text": "Vi que Valeria dijo que casi no existo en el chat. No está mal. Existir ahí cansa."
+    },
+    {
+     "who": "martina",
+     "text": "Iván es primo mío. No lo anuncio. Si alguien lo usa para sacarme información, me voy del grupo."
+    }
+   ],
+   "choices": [
+    {
+     "text": "No te voy a usar para llegar a él. Gracias por decirlo.",
+     "next": "c3f",
+     "fx": {
+      "martina": {
+       "trust": 3,
+       "close": 1
+      }
+     },
+     "flag": "martina_cousin"
+    },
+    {
+     "text": "Primo. Eso explica silencios. No se lo digo a nadie.",
+     "next": "c3f",
+     "fx": {
+      "martina": {
+       "trust": 2
+      }
+     },
+     "flag": "martina_secret_kept"
+    },
+    {
+     "text": "Si es relevante para el grupo, no puede ser solo tuyo.",
+     "next": "c3f",
+     "fx": {
+      "martina": {
+       "tension": 2,
+       "trust": -1
+      }
+     }
+    },
+    {
+     "text": "Valeria habla de más. Tú no me debes una ficha.",
+     "next": "c3f",
+     "fx": {
+      "martina": {
+       "trust": 1
+      },
+      "valeria": {
+       "tension": 1
+      }
+     }
+    }
+   ],
+   "chapter": 3,
+   "title": ""
+  },
+  "c3f": {
+   "chat": "martina",
+   "incoming": [
+    {
+     "who": "martina",
+     "text": "Mi tía le prestó dinero a la madre de Iván. Él lo está «devolviendo» con trabajos que no explica. Yo no pregunto en la mesa. En el chat, menos."
+    },
+    {
+     "who": "martina",
+     "text": "Si algún día deja de contestar, no asumas que se fue de fiesta. A veces se esconde cuando debe."
+    }
+   ],
+   "choices": [
+    {
+     "text": "Lo guardo. Si desaparece, no empiezo por la fiesta.",
+     "next": "c3end",
+     "fx": {
+      "martina": {
+       "trust": 2
+      }
+     },
+     "flag": "ivan_debt_hint"
+    },
+    {
+     "text": "Eso ya es más que un favor de familia.",
+     "next": "c3end",
+     "fx": {
+      "martina": {
+       "trust": 1,
+       "tension": 1
+      }
+     }
+    },
+    {
+     "text": "¿Quieres que alguien más lo sepa?",
+     "next": "c3end",
+     "fx": {
+      "martina": {
+       "close": 1,
+       "trust": 1
+      }
+     }
+    },
+    {
+     "text": "No voy a cargar deudas ajenas.",
+     "next": "c3end",
+     "fx": {
+      "martina": {
+       "trust": -1,
+       "close": -1
+      }
+     }
+    }
+   ],
+   "chapter": 3,
+   "title": ""
+  },
+  "c3end": {
+   "chat": "ivan",
+   "incoming": [
+    {
+     "who": "ivan",
+     "text": "Me dijeron que andas preguntando horarios. Tranquilo. Trabajo, debo, pago. El orden no siempre es bonito."
+    },
+    {
+     "who": "ivan",
+     "text": "Mateo es buena gente. Demasiada. Si le llega un rumor mío, se le va a quedar en la cara y alguien lo va a leer."
+    }
+   ],
+   "choices": [
+    {
+     "text": "No estoy armando un expediente. Solo ubico al grupo.",
+     "next": "c4a",
+     "fx": {
+      "ivan": {
+       "trust": 1
+      }
+     }
+    },
+    {
+     "text": "Si el rumor es falso, desmiéntelo tú.",
+     "next": "c4a",
+     "fx": {
+      "ivan": {
+       "tension": 2
+      }
+     }
+    },
+    {
+     "text": "Mateo no es tu problema. No lo uses de escudo.",
+     "next": "c4a",
+     "fx": {
+      "ivan": {
+       "tension": 2
+      },
+      "mateo": {
+       "trust": 1
+      }
+     },
+     "flag": "defended_mateo"
+    },
+    {
+     "text": "Mientras no salpique al edificio, no es mi noche.",
+     "next": "c4a",
+     "fx": {
+      "ivan": {
+       "close": 1
+      }
+     }
+    }
+   ],
+   "chapter": 3,
+   "title": ""
+  },
+  "c4a": {
+   "chat": "group",
+   "incoming": [
+    {
+     "who": "mateo",
+     "text": "Confirmado incompleto: Ángela sí, Sofía sí, Diego quizá, Lucía sale tarde, Antonio dice que tiene un escrito. La pijamada se queda en el chat."
+    },
+    {
+     "who": "diego",
+     "text": "Yo entro a las nueve. Si esto se vuelve un confesionario, me salgo."
+    },
+    {
+     "who": "sofia",
+     "text": "Llevo snacks virtuales y una foto del cielo, que hoy está sucio de luz."
+    }
+   ],
+   "choices": [
+    {
+     "text": "Entro. Prometo no convertir esto en terapia de grupo.",
+     "next": "c4b",
+     "fx": {
+      "diego": {
+       "trust": 1
+      },
+      "mateo": {
+       "close": 1
+      }
+     }
+    },
+    {
+     "text": "Voy a leer. Si aporto, que sea concreto.",
+     "next": "c4b",
+     "fx": {
+      "valeria": {
+       "trust": 1
+      }
+     }
+    },
+    {
+     "text": "Antonio ausente anotado. Lucía tarde, anotado.",
+     "next": "c4b",
+     "fx": {
+      "sofia": {
+       "trust": 1
+      }
+     },
+     "flag": "noted_absences"
+    },
+    {
+     "text": "No sé si me quedo toda la noche.",
+     "next": "c4b",
+     "fx": {
+      "mateo": {
+       "close": -1
+      }
+     }
+    }
+   ],
+   "chapter": 4,
+   "title": "La noche"
+  },
+  "c4b": {
+   "chat": "group",
+   "incoming": [
+    {
+     "who": "angela",
+     "text": "Regla blanda: se puede decir que no. Nadie debe contar una historia para ganarse la estancia."
+    },
+    {
+     "who": "lucia",
+     "text": "Llego en veinte. No me esperen para empezar el caos."
+    },
+    {
+     "who": "antonio",
+     "text": "No cancelo. Estoy en una cosa. Entro cuando pueda. No hagan teorías."
+    },
+    {
+     "who": "ivan",
+     "text": "Yo ando en la calle. Si se corta, es el túnel, no drama."
+    }
+   ],
+   "choices": [
+    {
+     "text": "Sin teorías. Cada quien con su hora.",
+     "next": "c4c",
+     "fx": {
+      "antonio": {
+       "trust": 1
+      }
+     }
+    },
+    {
+     "text": "Antonio, «una cosa» es una frase muy amplia.",
+     "next": "c4c",
+     "fx": {
+      "antonio": {
+       "tension": 2
+      }
+     },
+     "flag": "pressed_antonio"
+    },
+    {
+     "text": "Iván, avisa cuando pases el túnel.",
+     "next": "c4c",
+     "fx": {
+      "ivan": {
+       "trust": 1
+      }
+     }
+    },
+    {
+     "text": "Ángela, la regla blanda me gusta. La sostengo.",
+     "next": "c4c",
+     "fx": {
+      "angela": {
+       "close": 2,
+       "trust": 1
+      }
+     }
+    }
+   ],
+   "chapter": 4,
+   "title": ""
+  },
+  "c4c": {
+   "chat": "group",
+   "incoming": [
+    {
+     "who": "mateo",
+     "text": "Voy a la tienda de la esquina por sodas. Diez minutos. Si el portón de servicio está otra vez con la cadena suelta, lo cierro al volver."
+    },
+    {
+     "who": "sofia",
+     "text": "Mando foto del cielo y de la calle, 22:41. Sale una van blanca mal estacionada. Fea, no artística."
+    },
+    {
+     "who": "mateo",
+     "text": "Ya salí. No tardo."
+    }
+   ],
+   "choices": [
+    {
+     "text": "Te esperamos. Cierra el portón si sigue suelto.",
+     "next": "c4d",
+     "fx": {
+      "mateo": {
+       "trust": 1
+      }
+     },
+     "flag": "told_gate"
+    },
+    {
+     "text": "Sofía, guarda esa foto de la van. Por si acaso.",
+     "next": "c4d",
+     "fx": {
+      "sofia": {
+       "trust": 2
+      }
+     },
+     "flag": "asked_van_photo"
+    },
+    {
+     "text": "Mateo, manda ubicación cuando llegues a la tienda.",
+     "next": "c4d",
+     "fx": {
+      "mateo": {
+       "trust": 1,
+       "close": 1
+      }
+     },
+     "flag": "asked_location"
+    },
+    {
+     "text": "No hace falta reportar un recado de sodas.",
+     "next": "c4d",
+     "fx": {
+      "mateo": {
+       "close": -1
+      }
+     }
+    }
+   ],
+   "chapter": 4,
+   "title": ""
+  },
+  "c4d": {
+   "chat": "group",
+   "incoming": [
+    {
+     "who": "angela",
+     "text": "Mateo está en línea. Escribiendo… y se detuvo."
+    },
+    {
+     "who": "diego",
+     "text": "Le marco. Sale apagado o fuera de cobertura."
+    },
+    {
+     "who": "valeria",
+     "text": "Su último visto del mensaje de la tienda es 22:44. Después nada."
+    },
+    {
+     "who": "ivan",
+     "text": "Yo no lo vi. Ando del otro lado. No me miren."
+    }
+   ],
+   "choices": [
+    {
+     "text": "Diego, sigue marcando. Ángela, no borren el chat.",
+     "next": "c4e",
+     "fx": {
+      "diego": {
+       "trust": 2
+      },
+      "angela": {
+       "trust": 1
+      }
+     },
+     "flag": "preserve_chat"
+    },
+    {
+     "text": "Iván, nadie te miró. No te adelantes.",
+     "next": "c4e",
+     "fx": {
+      "ivan": {
+       "tension": 2
+      }
+     }
+    },
+    {
+     "text": "Valeria, anota la hora. Sofía, la foto.",
+     "next": "c4e",
+     "fx": {
+      "valeria": {
+       "trust": 2
+      },
+      "sofia": {
+       "trust": 2
+      }
+     },
+     "flag": "timestamps"
+    },
+    {
+     "text": "Puede ser el túnel. No armemos una película.",
+     "next": "c4e",
+     "fx": {
+      "group": {
+       "tension": -1
+      }
+     }
+    }
+   ],
+   "chapter": 4,
+   "title": ""
+  },
+  "c4e": {
+   "chat": "narration",
+   "incoming": [
+    {
+     "who": "narrator",
+     "text": "El parque de la esquina está a cuatro minutos. Las farolas fallan una sí y una no. En el chat, el indicador de Mateo aparece y se apaga. Nadie manda una foto de las sodas."
+    },
+    {
+     "who": "narrator",
+     "text": "Cuando abres de nuevo La Colmena, el último mensaje de Mateo sigue siendo «Ya salí. No tardo.» Son las 23:06."
+    }
+   ],
+   "choices": [
+    {
+     "text": "Escribo en el grupo: voy a la tienda. Si no está, llamamos.",
+     "next": "c4end",
+     "fx": {
+      "diego": {
+       "trust": 1
+      },
+      "angela": {
+       "trust": 1
+      }
+     },
+     "flag": "went_store"
+    },
+    {
+     "text": "Pido que nadie vaya solo. Quedamos en parejas.",
+     "next": "c4end",
+     "fx": {
+      "lucia": {
+       "trust": 1
+      },
+      "valeria": {
+       "trust": 1
+      }
+     }
+    },
+    {
+     "text": "Reviso el portón de servicio antes de salir.",
+     "next": "c4end",
+     "fx": {
+      "sofia": {
+       "trust": 1
+      }
+     },
+     "flag": "checked_gate"
+    },
+    {
+     "text": "Espero cinco minutos más. Puede ser el teléfono.",
+     "next": "c4end",
+     "fx": {
+      "mateo": {
+       "close": -1
+      }
+     }
+    }
+   ],
+   "chapter": 4,
+   "title": ""
+  },
+  "c4end": {
+   "chat": "diego",
+   "incoming": [
+    {
+     "who": "diego",
+     "text": "No está en la tienda. El cajero dice que pasó un chico con sudadera gris, preguntó por sodas y salió sin comprar. Después una van blanca arrancó mal."
+    },
+    {
+     "who": "diego",
+     "text": "No me gusta cómo suena. Mateo no se sube con extraños. Ni por educación."
+    }
+   ],
+   "choices": [
+    {
+     "text": "La van de la foto de Sofía. Hay que guardarla ya.",
+     "next": "c5a",
+     "fx": {
+      "sofia": {
+       "trust": 2
+      },
+      "diego": {
+       "trust": 2
+      }
+     },
+     "flag": "evidence_van"
+    },
+    {
+     "text": "Vamos con la caseta. Que revisen cámaras.",
+     "next": "c5a",
+     "fx": {
+      "valeria": {
+       "trust": 1
+      }
+     },
+     "flag": "asked_cameras"
+    },
+    {
+     "text": "No acusamos a nadie todavía. Horas y hechos.",
+     "next": "c5a",
+     "fx": {
+      "angela": {
+       "trust": 2
+      }
+     }
+    },
+    {
+     "text": "Esto se nos fue de las manos. Llamen a su casa.",
+     "next": "c5a",
+     "fx": {
+      "diego": {
+       "trust": 1
+      }
+     },
+     "flag": "called_family"
+    }
+   ],
+   "chapter": 4,
+   "title": ""
+  },
+  "c5a": {
+   "chat": "group",
+   "incoming": [
+    {
+     "who": "angela",
+     "text": "Su madre no contesta. El padre está fuera de la ciudad. Diego tiene la llave de la papelería, no de la casa."
+    },
+    {
+     "who": "sofia",
+     "text": "Subí la foto de la van al archivo del grupo. Placa tapada con lodo. Se ve un golpe en el farol derecho."
+    },
+    {
+     "who": "valeria",
+     "text": "Captura del estado de Mateo: en línea 22:43, escribiendo 22:44, última conexión 22:46."
+    }
+   ],
+   "choices": [
+    {
+     "text": "Esas tres piezas se quedan juntas. No las repartan.",
+     "next": "c5b",
+     "fx": {
+      "valeria": {
+       "trust": 2
+      },
+      "sofia": {
+       "trust": 1
+      }
+     },
+     "flag": "bundle_evidence"
+    },
+    {
+     "text": "¿Alguien más vio la van antes de las 22:41?",
+     "next": "c5b",
+     "fx": {
+      "group": {
+       "trust": 1
+      }
+     }
+    },
+    {
+     "text": "Hay que decirle a la caseta esta noche, no mañana.",
+     "next": "c5b",
+     "fx": {
+      "diego": {
+       "trust": 1
+      }
+     },
+     "flag": "lodge_now"
+    },
+    {
+     "text": "Puede haberse subido con alguien conocido.",
+     "next": "c5b",
+     "fx": {
+      "ivan": {
+       "tension": 1
+      }
+     }
+    }
+   ],
+   "chapter": 5,
+   "title": "Desaparición"
+  },
+  "c5b": {
+   "chat": "angela",
+   "incoming": [
+    {
+     "who": "angela",
+     "text": "Te escribo aparte. En el grupo Diego ya está al borde y Antonio acaba de entrar como si nada."
+    },
+    {
+     "who": "angela",
+     "text": "Antonio dijo «acabo de ver el chat, qué pasó». Su última conexión, según Valeria, fue 22:20. No es imposible. Es incómodo."
+    }
+   ],
+   "choices": [
+    {
+     "text": "No lo acusamos por una hora. Le pedimos el recorrido.",
+     "next": "c5c",
+     "fx": {
+      "angela": {
+       "trust": 2
+      },
+      "antonio": {
+       "trust": 1
+      }
+     }
+    },
+    {
+     "text": "22:20 y entra a las 23:20. Quiero esa diferencia por escrito.",
+     "next": "c5c",
+     "fx": {
+      "valeria": {
+       "trust": 1
+      }
+     },
+     "flag": "antonio_gap"
+    },
+    {
+     "text": "Tú cálmalo a Diego. Yo hablo con Antonio.",
+     "next": "c5c",
+     "fx": {
+      "angela": {
+       "close": 1
+      },
+      "diego": {
+       "trust": 1
+      }
+     }
+    },
+    {
+     "text": "Antonio me cae mal, pero mal no es prueba.",
+     "next": "c5c",
+     "fx": {
+      "antonio": {
+       "trust": 1
+      },
+      "angela": {
+       "trust": 1
+      }
+     }
+    }
+   ],
+   "chapter": 5,
+   "title": ""
+  },
+  "c5c": {
+   "chat": "antonio",
+   "incoming": [
+    {
+     "who": "antonio",
+     "text": "Antes de que armes la película: estaba con un escrito y el teléfono en silencio. Vi el grupo tarde. No secuestré a Mateo en el receso."
+    },
+    {
+     "who": "antonio",
+     "text": "Si quieres horas, te las doy. De diez a once y pico estuve fuera del edificio. No en la tienda. Punto."
+    }
+   ],
+   "choices": [
+    {
+     "text": "Fuera del edificio no es un álibi. ¿Con quién?",
+     "next": "c5d",
+     "fx": {
+      "antonio": {
+       "tension": 2
+      }
+     },
+     "flag": "asked_alibi"
+    },
+    {
+     "text": "No te acuso. Te pido un recorrido que se pueda cruzar.",
+     "next": "c5d",
+     "fx": {
+      "antonio": {
+       "trust": 1
+      }
+     }
+    },
+    {
+     "text": "El tono no ayuda. Mateo no aparece.",
+     "next": "c5d",
+     "fx": {
+      "antonio": {
+       "tension": 1
+      },
+      "mateo": {
+       "close": 1
+      }
+     }
+    },
+    {
+     "text": "Guárdate el discurso. Habla cuando tengas ganas de ser útil.",
+     "next": "c5d",
+     "fx": {
+      "antonio": {
+       "tension": 3
+      }
+     }
+    }
+   ],
+   "chapter": 5,
+   "title": ""
+  },
+  "c5d": {
+   "chat": "antonio",
+   "incoming": [
+    {
+     "who": "antonio",
+     "text": "Estuve con alguien. No es asunto del grupo. Si lo convierto en coartada pública, quemo una cosa que no es de ustedes."
+    },
+    {
+     "who": "antonio",
+     "text": "Puedo decirle a esa persona que confirme en privado. No en La Colmena."
+    }
+   ],
+   "choices": [
+    {
+     "text": "Privado me sirve. Público, no, si no hace falta.",
+     "next": "c5e",
+     "fx": {
+      "antonio": {
+       "trust": 2
+      }
+     },
+     "flag": "private_alibi"
+    },
+    {
+     "text": "Si tu alguien no confirma, la hora se queda abierta.",
+     "next": "c5e",
+     "fx": {
+      "antonio": {
+       "tension": 1,
+       "trust": 1
+      }
+     }
+    },
+    {
+     "text": "Eso suena a Lucía. No lo publiques tú.",
+     "next": "c5e",
+     "fx": {
+      "lucia": {
+       "trust": 1
+      },
+      "antonio": {
+       "tension": 2
+      }
+     },
+     "flag": "guessed_lucia"
+    },
+    {
+     "text": "Tu privacidad no pesa más que Mateo.",
+     "next": "c5e",
+     "fx": {
+      "antonio": {
+       "tension": 2
+      }
+     }
+    }
+   ],
+   "chapter": 5,
+   "title": ""
+  },
+  "c5e": {
+   "chat": "ivan",
+   "incoming": [
+    {
+     "who": "ivan",
+     "text": "Vi el relajo. Yo estaba del otro lado de la avenida, lo juro por quien quieras. No vi a Mateo ni la van."
+    },
+    {
+     "who": "ivan",
+     "text": "Y no, no le debo una explicación a Valeria. Si quiere horas, que las pida sin ese tono de archivo."
+    }
+   ],
+   "choices": [
+    {
+     "text": "Entonces dame tu hora y tu calle, sin juramentos.",
+     "next": "c5end",
+     "fx": {
+      "ivan": {
+       "tension": 1
+      }
+     },
+     "flag": "ivan_where"
+    },
+    {
+     "text": "Valeria pide archivos porque alguien falta.",
+     "next": "c5end",
+     "fx": {
+      "valeria": {
+       "trust": 1
+      },
+      "ivan": {
+       "tension": 1
+      }
+     }
+    },
+    {
+     "text": "Si no viste nada, dilo una vez y no te enredes.",
+     "next": "c5end",
+     "fx": {
+      "ivan": {
+       "trust": 1
+      }
+     }
+    },
+    {
+     "text": "Tu primo derecho a molestarte se acabó esta noche.",
+     "next": "c5end",
+     "fx": {
+      "ivan": {
+       "tension": 2
+      },
+      "martina": {
+       "tension": 1
+      }
+     }
+    }
+   ],
+   "chapter": 5,
+   "title": ""
+  },
+  "c5end": {
+   "chat": "valeria",
+   "incoming": [
+    {
+     "who": "valeria",
+     "text": "Resumen frío: Mateo sale 22:40. Foto de van 22:41. Escribiendo 22:44. Última conexión 22:46. Cajero: salió sin comprar. Antonio desconectado desde 22:20. Iván «del otro lado»."
+    },
+    {
+     "who": "valeria",
+     "text": "Nada de esto señala un culpable. Señala por dónde no empezar a inventar."
+    }
+   ],
+   "choices": [
+    {
+     "text": "Lo copio al cuaderno. Gracias por no cerrar el caso.",
+     "next": "c6a",
+     "fx": {
+      "valeria": {
+       "trust": 2
+      }
+     },
+     "flag": "notebook_open"
+    },
+    {
+     "text": "Mañana cruzamos cámaras y a la persona de Antonio.",
+     "next": "c6a",
+     "fx": {
+      "antonio": {
+       "trust": 1
+      }
+     }
+    },
+    {
+     "text": "Iván sigue siendo el hueco más grande.",
+     "next": "c6a",
+     "fx": {
+      "ivan": {
+       "tension": 1
+      },
+      "valeria": {
+       "trust": 1
+      }
+     }
+    },
+    {
+     "text": "Descansen. Un error a esta hora sale caro.",
+     "next": "c6a",
+     "fx": {
+      "angela": {
+       "close": 1
+      }
+     }
+    }
+   ],
+   "chapter": 5,
+   "title": ""
+  },
+  "c6a": {
+   "chat": "sofia",
+   "incoming": [
+    {
+     "who": "sofia",
+     "text": "Ampliación de la foto. En el reflejo de la van se ve el letrero de la tienda, así que no es de otra calle. Y hay una sudadera gris a la izquierda, de espaldas, medio cortada."
+    },
+    {
+     "who": "sofia",
+     "text": "No digo que sea Mateo. Digo que la hora y el lugar coinciden con lo que él escribió."
+    }
+   ],
+   "choices": [
+    {
+     "text": "Eso entra al cuaderno como foto, no como certeza.",
+     "next": "c6b",
+     "fx": {
+      "sofia": {
+       "trust": 2
+      }
+     },
+     "flag": "evidence_photo_note"
+    },
+    {
+     "text": "Mándame el recorte de la sudadera.",
+     "next": "c6b",
+     "fx": {
+      "sofia": {
+       "trust": 1
+      }
+     }
+    },
+    {
+     "text": "Si lo publicas en el grupo, va a haber juicio.",
+     "next": "c6b",
+     "fx": {
+      "sofia": {
+       "trust": 1
+      },
+      "diego": {
+       "tension": 1
+      }
+     }
+    },
+    {
+     "text": "Puede ser cualquier sudadera gris.",
+     "next": "c6b",
+     "fx": {
+      "sofia": {
+       "tension": 1
+      }
+     }
+    }
+   ],
+   "chapter": 6,
+   "title": "Versiones"
+  },
+  "c6b": {
+   "chat": "diego",
+   "incoming": [
+    {
+     "who": "diego",
+     "text": "Fui a la caseta. La cámara del portón principal no cubre la esquina. La del servicio sí, pero el guardia dice que «se reinició» a las 22:50. Conveniente."
+    },
+    {
+     "who": "diego",
+     "text": "No acuso al guardia. Digo que el hueco existe."
+    }
+   ],
+   "choices": [
+    {
+     "text": "El reinicio a las 22:50 se anota. Nombre del guardia.",
+     "next": "c6c",
+     "fx": {
+      "diego": {
+       "trust": 2
+      }
+     },
+     "flag": "camera_gap"
+    },
+    {
+     "text": "No presiones al guardia solo. Vamos los dos.",
+     "next": "c6c",
+     "fx": {
+      "diego": {
+       "close": 2,
+       "trust": 1
+      }
+     }
+    },
+    {
+     "text": "Conveniente no es prueba de complicidad.",
+     "next": "c6c",
+     "fx": {
+      "diego": {
+       "trust": 1
+      }
+     }
+    },
+    {
+     "text": "Si fuerzas la caseta, perdemos el acceso.",
+     "next": "c6c",
+     "fx": {
+      "diego": {
+       "tension": 1
+      }
+     }
+    }
+   ],
+   "chapter": 6,
+   "title": ""
+  },
+  "c6c": {
+   "chat": "lucia",
+   "incoming": [
+    {
+     "who": "lucia",
+     "text": "Antonio me pidió que te confirmara algo. Estuvimos juntos de diez a once y cuarto. No en la tienda. En el estacionamiento de la clínica, dentro del coche."
+    },
+    {
+     "who": "lucia",
+     "text": "No es público. Si lo usas para ayudar a Mateo, úsalo. Si lo usas para humillarnos, no vuelvo a escribirte."
+    }
+   ],
+   "choices": [
+    {
+     "text": "Solo lo uso si hace falta para las horas. Gracias.",
+     "next": "c6d",
+     "fx": {
+      "lucia": {
+       "trust": 3,
+       "close": 1
+      },
+      "antonio": {
+       "trust": 1
+      }
+     },
+     "flag": "lucia_confirms"
+    },
+    {
+     "text": "Once y cuarto los deja fuera de las 22:40. Anotado.",
+     "next": "c6d",
+     "fx": {
+      "lucia": {
+       "trust": 2
+      }
+     }
+    },
+    {
+     "text": "Debieron decirlo anoche, aunque doliera.",
+     "next": "c6d",
+     "fx": {
+      "lucia": {
+       "tension": 2,
+       "trust": 1
+      }
+     }
+    },
+    {
+     "text": "Su secreto no me importa. La hora, sí.",
+     "next": "c6d",
+     "fx": {
+      "lucia": {
+       "tension": 1
+      }
+     }
+    }
+   ],
+   "chapter": 6,
+   "title": ""
+  },
+  "c6d": {
+   "chat": "martina",
+   "incoming": [
+    {
+     "who": "martina",
+     "text": "Iván llegó a casa de mi tía pasada la una. Olía a gasolina y no quiso cenar. Dijo que el turno se alargó."
+    },
+    {
+     "who": "martina",
+     "text": "No lo vi en la esquina. No sé de vans. Sé que mintió en una cosa pequeña: su turno terminaba a las doce."
+    }
+   ],
+   "choices": [
+    {
+     "text": "La hora del turno es un dato, no una condena. Gracias.",
+     "next": "c6e",
+     "fx": {
+      "martina": {
+       "trust": 3
+      }
+     },
+     "flag": "shift_lie"
+    },
+    {
+     "text": "¿Se lo dijiste a él?",
+     "next": "c6e",
+     "fx": {
+      "martina": {
+       "close": 1
+      }
+     }
+    },
+    {
+     "text": "Gasolina y una van. No lo cierro, lo junto.",
+     "next": "c6e",
+     "fx": {
+      "martina": {
+       "trust": 1
+      },
+      "ivan": {
+       "tension": 1
+      }
+     },
+     "flag": "gas_note"
+    },
+    {
+     "text": "No debiste escribirlo. Es tu primo.",
+     "next": "c6e",
+     "fx": {
+      "martina": {
+       "tension": 2,
+       "trust": -1
+      }
+     }
+    }
+   ],
+   "chapter": 6,
+   "title": ""
+  },
+  "c6e": {
+   "chat": "ivan",
+   "incoming": [
+    {
+     "who": "ivan",
+     "text": "Martina te escribió. Lo sé porque me dejó de contestar. Bien. El turno se alargó porque me quedé a cargar cajas. Gasolina porque la moto tosía."
+    },
+    {
+     "who": "ivan",
+     "text": "Si quieres una historia peor, búsca la. Yo no toqué a Mateo."
+    }
+   ],
+   "choices": [
+    {
+     "text": "Entonces explica las cajas y quién te las dio.",
+     "next": "c6end",
+     "fx": {
+      "ivan": {
+       "tension": 2
+      }
+     },
+     "flag": "asked_boxes"
+    },
+    {
+     "text": "No dije que lo tocaras. Dije que la hora no cuadra.",
+     "next": "c6end",
+     "fx": {
+      "ivan": {
+       "tension": 1,
+       "trust": 1
+      }
+     }
+    },
+    {
+     "text": "Deja a Martina fuera. Ella no es tu coartada ni tu problema.",
+     "next": "c6end",
+     "fx": {
+      "martina": {
+       "trust": 2
+      },
+      "ivan": {
+       "tension": 1
+      }
+     }
+    },
+    {
+     "text": "Tu enojo llega antes que tu explicación.",
+     "next": "c6end",
+     "fx": {
+      "ivan": {
+       "tension": 2
+      }
+     }
+    }
+   ],
+   "chapter": 6,
+   "title": ""
+  },
+  "c6end": {
+   "chat": "angela",
+   "incoming": [
+    {
+     "who": "angela",
+     "text": "Diego quiere ir a la policía en la mañana con la foto y el hueco de la cámara. Antonio dice que sin placa es ruido. Los dos tienen una parte."
+    },
+    {
+     "who": "angela",
+     "text": "Tú decides cómo entramos. Si vamos rotos, nos van a devolver a casa."
+    }
+   ],
+   "choices": [
+    {
+     "text": "Vamos con foto, horas y el hueco. Sin nombres de culpables.",
+     "next": "c7a",
+     "fx": {
+      "angela": {
+       "trust": 2
+      },
+      "diego": {
+       "trust": 1
+      }
+     },
+     "flag": "police_clean"
+    },
+    {
+     "text": "Primero cerramos el relato de Iván. Después la policía.",
+     "next": "c7a",
+     "fx": {
+      "ivan": {
+       "tension": 1
+      }
+     }
+    },
+    {
+     "text": "Lucía y Antonio no entran en el parte.",
+     "next": "c7a",
+     "fx": {
+      "lucia": {
+       "trust": 2
+      }
+     },
+     "flag": "protect_lucia"
+    },
+    {
+     "text": "Que vaya Diego. Yo sigo en los chats.",
+     "next": "c7a",
+     "fx": {
+      "diego": {
+       "tension": 1
+      }
+     }
+    }
+   ],
+   "chapter": 6,
+   "title": ""
+  },
+  "c7a": {
+   "chat": "valeria",
+   "incoming": [
+    {
+     "who": "valeria",
+     "text": "Conseguí, sin magia, el registro de la papelería: Mateo anotó a mano «teléfonos / lista / no es de la uni» a las 18:10. La hoja sigue en el mostrador. Diego la fotografió."
+    },
+    {
+     "who": "valeria",
+     "text": "Eso no lo escribió un chico que se fue de fiesta."
+    }
+   ],
+   "choices": [
+    {
+     "text": "La nota entra al cuaderno. Quiero ver la foto.",
+     "next": "c7b",
+     "fx": {
+      "valeria": {
+       "trust": 2
+      },
+      "diego": {
+       "trust": 1
+      }
+     },
+     "flag": "evidence_note"
+    },
+    {
+     "text": "«Teléfonos» puede ser la entrega de Iván.",
+     "next": "c7b",
+     "fx": {
+      "ivan": {
+       "tension": 1
+      }
+     }
+    },
+    {
+     "text": "No concluyas el móvil todavía.",
+     "next": "c7b",
+     "fx": {
+      "valeria": {
+       "trust": 1
+      }
+     }
+    },
+    {
+     "text": "Demasiado ordenado para ser casual.",
+     "next": "c7b",
+     "fx": {
+      "valeria": {
+       "close": 1
+      }
+     }
+    }
+   ],
+   "chapter": 7,
+   "title": "Secretos"
+  },
+  "c7b": {
+   "chat": "diego",
+   "incoming": [
+    {
+     "who": "diego",
+     "text": "Mateo me dijo hace una semana que alguien revendía celulares del laboratorio. No me dio nombre. Le pedí que no se metiera. No me hizo caso."
+    },
+    {
+     "who": "diego",
+     "text": "Si esto es por esa lista, yo lo empujé a callarse. Esa parte es mía."
+    }
+   ],
+   "choices": [
+    {
+     "text": "No es tuya la desaparición. Sí el silencio. Se puede decir.",
+     "next": "c7c",
+     "fx": {
+      "diego": {
+       "trust": 2,
+       "close": 2
+      }
+     }
+    },
+    {
+     "text": "Entonces la lista es el móvil. Hay que encontrarla.",
+     "next": "c7c",
+     "fx": {
+      "diego": {
+       "trust": 1
+      }
+     },
+     "flag": "seek_list"
+    },
+    {
+     "text": "Debiste contarlo anoche.",
+     "next": "c7c",
+     "fx": {
+      "diego": {
+       "tension": 2,
+       "trust": 1
+      }
+     }
+    },
+    {
+     "text": "No te castigues en el chat. Ayuda en concreto.",
+     "next": "c7c",
+     "fx": {
+      "diego": {
+       "trust": 1
+      }
+     }
+    }
+   ],
+   "chapter": 7,
+   "title": ""
+  },
+  "c7c": {
+   "chat": "sofia",
+   "incoming": [
+    {
+     "who": "sofia",
+     "text": "Revisé mis archivos viejos. Hace once días fotografié sin querer una caja de celulares en el estacionamiento de visitas. Pensé que era un puesto. Iván está al fondo, de perfil."
+    },
+    {
+     "who": "sofia",
+     "text": "No la subí nunca. Me pareció fea."
+    }
+   ],
+   "choices": [
+    {
+     "text": "Esa foto ahora es evidencia. Guárdala offline.",
+     "next": "c7d",
+     "fx": {
+      "sofia": {
+       "trust": 2
+      }
+     },
+     "flag": "evidence_box"
+    },
+    {
+     "text": "¿Iván se ve claro o solo el perfil?",
+     "next": "c7d",
+     "fx": {
+      "sofia": {
+       "trust": 1
+      }
+     }
+    },
+    {
+     "text": "Once días. Esto no nació anoche.",
+     "next": "c7d",
+     "fx": {
+      "valeria": {
+       "trust": 1
+      }
+     }
+    },
+    {
+     "text": "Pudiste decirlo cuando Mateo salió.",
+     "next": "c7d",
+     "fx": {
+      "sofia": {
+       "tension": 2
+      }
+     }
+    }
+   ],
+   "chapter": 7,
+   "title": ""
+  },
+  "c7d": {
+   "chat": "lucia",
+   "incoming": [
+    {
+     "who": "lucia",
+     "text": "Antonio está peor de lo que muestra. No por la policía: por si el grupo se entera de lo nuestro y lo convierte en motivo."
+    },
+    {
+     "who": "lucia",
+     "text": "Yo no quiero escondernos para siempre. Tampoco quiero que Mateo sea la excusa para sacarnos del clóset ajeno."
+    }
+   ],
+   "choices": [
+    {
+     "text": "Su relación no es el caso. La dejo fuera.",
+     "next": "c7e",
+     "fx": {
+      "lucia": {
+       "trust": 2,
+       "close": 2
+      }
+     }
+    },
+    {
+     "text": "Si Antonio coopera, el secreto aguanta.",
+     "next": "c7e",
+     "fx": {
+      "lucia": {
+       "trust": 1
+      },
+      "antonio": {
+       "trust": 1
+      }
+     }
+    },
+    {
+     "text": "Esconderlo les está costando credibilidad.",
+     "next": "c7e",
+     "fx": {
+      "lucia": {
+       "tension": 1
+      }
+     }
+    },
+    {
+     "text": "Eso lo resuelven ustedes. Yo sigo con Mateo.",
+     "next": "c7e",
+     "fx": {
+      "lucia": {
+       "close": -1
+      }
+     }
+    }
+   ],
+   "chapter": 7,
+   "title": ""
+  },
+  "c7e": {
+   "chat": "martina",
+   "incoming": [
+    {
+     "who": "martina",
+     "text": "Encontré en el chat familiar un audio de Iván, de las 22:36. Le dice a alguien «ya va a salir, esquina de la tienda, no lo toquen fuerte»."
+    },
+    {
+     "who": "martina",
+     "text": "No sé quién está del otro lado. Sí sé que no era un turno."
+    }
+   ],
+   "choices": [
+    {
+     "text": "Ese audio es la pieza. No lo reenvíes al grupo todavía.",
+     "next": "c7end",
+     "fx": {
+      "martina": {
+       "trust": 3
+      }
+     },
+     "flag": "evidence_audio"
+    },
+    {
+     "text": "¿Puedes pasarme solo la hora y la frase?",
+     "next": "c7end",
+     "fx": {
+      "martina": {
+       "trust": 2
+      }
+     }
+    },
+    {
+     "text": "Hay que oírlo con Valeria, no con todo el mundo.",
+     "next": "c7end",
+     "fx": {
+      "valeria": {
+       "trust": 1
+      },
+      "martina": {
+       "trust": 1
+      }
+     }
+    },
+    {
+     "text": "Eso incrimina a tu primo. ¿Estás segura?",
+     "next": "c7end",
+     "fx": {
+      "martina": {
+       "close": 1,
+       "tension": 1
+      }
+     }
+    }
+   ],
+   "chapter": 7,
+   "title": ""
+  },
+  "c7end": {
+   "chat": "ivan",
+   "incoming": [
+    {
+     "who": "ivan",
+     "text": "Si Martina te pasó algo, es familia rota. Yo le dije a un tipo que Mateo iba a la tienda para hablar, no para que se lo llevaran."
+    },
+    {
+     "who": "ivan",
+     "text": "El tipo se llama Rafael. Le dicen El Nene. Le debía la caja de teléfonos. Mateo había visto la lista. Quería asustarlo. Se les fue."
+    }
+   ],
+   "choices": [
+    {
+     "text": "Rafael. Esquina. 22:36. Lo anoto tal cual.",
+     "next": "c8a",
+     "fx": {
+      "ivan": {
+       "tension": 1
+      }
+     },
+     "flag": "name_rafael"
+    },
+    {
+     "text": "«Asustarlo» no es un matiz. Es una decisión.",
+     "next": "c8a",
+     "fx": {
+      "ivan": {
+       "tension": 2
+      }
+     }
+    },
+    {
+     "text": "¿Dónde está Mateo ahora? Eso primero.",
+     "next": "c8a",
+     "fx": {
+      "mateo": {
+       "close": 2
+      }
+     },
+     "flag": "asked_where"
+    },
+    {
+     "text": "Vas a repetir esto fuera del chat privado.",
+     "next": "c8a",
+     "fx": {
+      "ivan": {
+       "tension": 2
+      },
+      "valeria": {
+       "trust": 1
+      }
+     }
+    }
+   ],
+   "chapter": 7,
+   "title": ""
+  },
+  "c8a": {
+   "chat": "group",
+   "incoming": [
+    {
+     "who": "diego",
+     "text": "Alguien filtró que Iván sabe algo. No fui yo. El grupo está en llamas."
+    },
+    {
+     "who": "antonio",
+     "text": "Si hay un nombre, se dice. Basta de privados que nos dejan de extras."
+    },
+    {
+     "who": "angela",
+     "text": "Privado no es lo mismo que ocultar. Pero ya no alcanza."
+    }
+   ],
+   "choices": [
+    {
+     "text": "Hay un nombre de fuera: Rafael. Iván lo dio. No es sentencia.",
+     "next": "c8b",
+     "fx": {
+      "group": {
+       "trust": 1
+      }
+     },
+     "flag": "shared_name"
+    },
+    {
+     "text": "Primero saco a Mateo. El juicio del grupo espera.",
+     "next": "c8b",
+     "fx": {
+      "mateo": {
+       "close": 1
+      },
+      "diego": {
+       "trust": 1
+      }
+     }
+    },
+    {
+     "text": "Antonio, tu hora ya está cubierta. No desvíes.",
+     "next": "c8b",
+     "fx": {
+      "antonio": {
+       "tension": 2
+      }
+     }
+    },
+    {
+     "text": "El que filtró complicó el rescate.",
+     "next": "c8b",
+     "fx": {
+      "group": {
+       "tension": 1
+      }
+     }
+    }
+   ],
+   "chapter": 8,
+   "title": "Ruptura"
+  },
+  "c8b": {
+   "chat": "diego",
+   "incoming": [
+    {
+     "who": "diego",
+     "text": "Si Iván lo mandó a la esquina, para mí ya está. No me pidas calma. Mateo es mi gente."
+    },
+    {
+     "who": "diego",
+     "text": "Dime que no lo vas a proteger por un audio y una prima asustada."
+    }
+   ],
+   "choices": [
+    {
+     "text": "No lo protejo. Tampoco dejo que linches la única pista.",
+     "next": "c8c",
+     "fx": {
+      "diego": {
+       "trust": 2,
+       "tension": 1
+      }
+     }
+    },
+    {
+     "text": "Tu rabia es justa. El lugar de Mateo importa más.",
+     "next": "c8c",
+     "fx": {
+      "diego": {
+       "close": 2
+      }
+     }
+    },
+    {
+     "text": "Si vas solo por Iván, lo pierdes y perdemos a Mateo.",
+     "next": "c8c",
+     "fx": {
+      "diego": {
+       "tension": 2,
+       "trust": 1
+      }
+     }
+    },
+    {
+     "text": "Haz lo que quieras. Yo sigo la dirección.",
+     "next": "c8c",
+     "fx": {
+      "diego": {
+       "tension": 2,
+       "close": -1
+      }
+     }
+    }
+   ],
+   "chapter": 8,
+   "title": ""
+  },
+  "c8c": {
+   "chat": "angela",
+   "incoming": [
+    {
+     "who": "angela",
+     "text": "Martina me escribió llorando. Cree que la vamos a entregar con el audio. Yo le dije que no hablo por ti."
+    },
+    {
+     "who": "angela",
+     "text": "Necesito saber de qué lado de la mesa estás cuando el grupo pida un culpable fácil."
+    }
+   ],
+   "choices": [
+    {
+     "text": "Del lado de las piezas. Martina no es la autora.",
+     "next": "c8d",
+     "fx": {
+      "angela": {
+       "trust": 2
+      },
+      "martina": {
+       "trust": 2
+      }
+     }
+    },
+    {
+     "text": "Si el audio salva a Mateo, se usa con cuidado.",
+     "next": "c8d",
+     "fx": {
+      "angela": {
+       "trust": 1
+      }
+     }
+    },
+    {
+     "text": "No voy a elegir mesa. Voy a elegir hechos.",
+     "next": "c8d",
+     "fx": {
+      "angela": {
+       "trust": 1,
+       "close": 1
+      }
+     }
+    },
+    {
+     "text": "El grupo puede pedir lo que quiera. No les debo un villano.",
+     "next": "c8d",
+     "fx": {
+      "angela": {
+       "tension": 1
+      }
+     }
+    }
+   ],
+   "chapter": 8,
+   "title": ""
+  },
+  "c8d": {
+   "chat": "sofia",
+   "incoming": [
+    {
+     "who": "sofia",
+     "text": "Me están pidiendo que publique la foto de la caja. Si lo hago, Iván no vuelve a hablar. Si no lo hago, Diego me va a tratar de cómplice."
+    },
+    {
+     "who": "sofia",
+     "text": "Tú has estado en el medio. Dime una cosa y la hago."
+    }
+   ],
+   "choices": [
+    {
+     "text": "No la publiques. Entrégala con el parte, no al muro.",
+     "next": "c8e",
+     "fx": {
+      "sofia": {
+       "trust": 2
+      },
+      "diego": {
+       "tension": 1
+      }
+     },
+     "flag": "hold_photo"
+    },
+    {
+     "text": "Publícala. Ya no hay tiempo de estética.",
+     "next": "c8e",
+     "fx": {
+      "sofia": {
+       "trust": 1
+      },
+      "ivan": {
+       "tension": 2
+      }
+     },
+     "flag": "publish_photo"
+    },
+    {
+     "text": "Pásasela solo a Valeria y a mí.",
+     "next": "c8e",
+     "fx": {
+      "sofia": {
+       "trust": 2
+      },
+      "valeria": {
+       "trust": 1
+      }
+     }
+    },
+    {
+     "text": "Es tu archivo. Decídelo tú.",
+     "next": "c8e",
+     "fx": {
+      "sofia": {
+       "close": -1
+      }
+     }
+    }
+   ],
+   "chapter": 8,
+   "title": ""
+  },
+  "c8e": {
+   "chat": "valeria",
+   "incoming": [
+    {
+     "who": "valeria",
+     "text": "Tres hipótesis caben todavía. Una: Rafael actúa por la deuda y Mateo está retenido para asustar. Dos: Mateo se subió y algo salió mal. Tres: nos están llevando a Iván para tapar a otro."
+    },
+    {
+     "who": "valeria",
+     "text": "La tres está débil. No está muerta."
+    }
+   ],
+   "choices": [
+    {
+     "text": "Trabajo la uno. Las otras no se tiran.",
+     "next": "c8end",
+     "fx": {
+      "valeria": {
+       "trust": 2
+      }
+     },
+     "flag": "hyp_one"
+    },
+    {
+     "text": "Quiero un lugar, no una hipótesis.",
+     "next": "c8end",
+     "fx": {
+      "valeria": {
+       "trust": 1
+      }
+     }
+    },
+    {
+     "text": "La tres la miro si Rafael no aparece.",
+     "next": "c8end",
+     "fx": {
+      "valeria": {
+       "close": 1
+      }
+     }
+    },
+    {
+     "text": "Basta de esquemas. A la calle.",
+     "next": "c8end",
+     "fx": {
+      "valeria": {
+       "tension": 1
+      },
+      "diego": {
+       "trust": 1
+      }
+     }
+    }
+   ],
+   "chapter": 8,
+   "title": ""
+  },
+  "c8end": {
+   "chat": "narration",
+   "incoming": [
+    {
+     "who": "narrator",
+     "text": "La Colmena se parte en dos hilos: el que quiere un nombre ya y el que quiere una dirección. Tu teléfono vibra con ambos. En el parque, la farola de la esquina sigue fallando."
+    },
+    {
+     "who": "narrator",
+     "text": "A las 18:12 del día siguiente, un número sin foto escribe: «si buscan al de la sudadera, no griten en el grupo»."
+    }
+   ],
+   "choices": [
+    {
+     "text": "Respondo: no grito. Quiero verlo.",
+     "next": "c9a",
+     "fx": {
+      "mateo": {
+       "close": 1
+      }
+     },
+     "flag": "answered_unknown"
+    },
+    {
+     "text": "Le paso el número a Valeria antes de contestar.",
+     "next": "c9a",
+     "fx": {
+      "valeria": {
+       "trust": 2
+      }
+     }
+    },
+    {
+     "text": "Se lo digo a Diego, sin el grupo.",
+     "next": "c9a",
+     "fx": {
+      "diego": {
+       "trust": 2
+      }
+     }
+    },
+    {
+     "text": "No contesto. Puede ser un cebo.",
+     "next": "c9a",
+     "fx": {
+      "tension": 1
+     }
+    }
+   ],
+   "chapter": 8,
+   "title": ""
+  },
+  "c9a": {
+   "chat": "unknown",
+   "incoming": [
+    {
+     "who": "unknown",
+     "text": "Rafael no contesta si huele policía en el chat. Mateo está vivo. Asustado, entero. Bodega de refacciones detrás del mercado de la 12. Portón gris."
+    },
+    {
+     "who": "unknown",
+     "text": "Yo no voy. Si llevan a todo el grupo, lo mueven."
+    }
+   ],
+   "choices": [
+    {
+     "text": "Voy con Diego y Ángela. Nadie más.",
+     "next": "c9b",
+     "fx": {
+      "diego": {
+       "trust": 1
+      },
+      "angela": {
+       "trust": 1
+      }
+     },
+     "flag": "small_team"
+    },
+    {
+     "text": "Le aviso a la caseta y vamos igual.",
+     "next": "c9b",
+     "fx": {
+      "valeria": {
+       "trust": 1
+      }
+     },
+     "flag": "caseta_and_go"
+    },
+    {
+     "text": "Primero confirmo la bodega con Iván.",
+     "next": "c9b",
+     "fx": {
+      "ivan": {
+       "tension": 1
+      }
+     }
+    },
+    {
+     "text": "Puede ser trampa. Pido una prueba de que Mateo está ahí.",
+     "next": "c9b",
+     "fx": {
+      "mateo": {
+       "trust": 1
+      }
+     },
+     "flag": "asked_proof"
+    }
+   ],
+   "chapter": 9,
+   "title": "La verdad"
+  },
+  "c9b": {
+   "chat": "unknown",
+   "incoming": [
+    {
+     "who": "unknown",
+     "text": "Prueba: Mateo dice que el atajo a la uni lo iba a enseñar él, no el mapa. Y que no compró las sodas."
+    },
+    {
+     "who": "unknown",
+     "text": "Con eso les basta. No pidan más por aquí."
+    }
+   ],
+   "choices": [
+    {
+     "text": "El atajo lo sabíamos nosotros. Vamos.",
+     "next": "c9c",
+     "fx": {
+      "mateo": {
+       "close": 2
+      }
+     },
+     "flag": "proof_ok"
+    },
+    {
+     "text": "Se lo confirmo a Ángela antes de movernos.",
+     "next": "c9c",
+     "fx": {
+      "angela": {
+       "trust": 2
+      }
+     }
+    },
+    {
+     "text": "Demasiado preciso. Igual puede haberlo oído Iván.",
+     "next": "c9c",
+     "fx": {
+      "ivan": {
+       "tension": 1
+      },
+      "valeria": {
+       "trust": 1
+      }
+     }
+    },
+    {
+     "text": "Voy, pero dejo el chat avisado a una persona.",
+     "next": "c9c",
+     "fx": {
+      "diego": {
+       "trust": 1
+      }
+     }
+    }
+   ],
+   "chapter": 9,
+   "title": ""
+  },
+  "c9c": {
+   "chat": "ivan",
+   "incoming": [
+    {
+     "who": "ivan",
+     "text": "La bodega es de un conocido de Rafael. Si entran gritando mi nombre, lo niega todo y mueven a Mateo."
+    },
+    {
+     "who": "ivan",
+     "text": "Yo puedo abrir el portón gris. Después hagan lo que tengan que hacer conmigo. Primero él."
+    }
+   ],
+   "choices": [
+    {
+     "text": "Abres y te quedas donde te veamos.",
+     "next": "c9d",
+     "fx": {
+      "ivan": {
+       "trust": 1,
+       "tension": 1
+      }
+     },
+     "flag": "ivan_opens"
+    },
+    {
+     "text": "No entras. Nos das la forma de abrir.",
+     "next": "c9d",
+     "fx": {
+      "ivan": {
+       "tension": 2
+      }
+     }
+    },
+    {
+     "text": "Si esto es otra vuelta, se acaba tu margen.",
+     "next": "c9d",
+     "fx": {
+      "ivan": {
+       "tension": 2
+      }
+     }
+    },
+    {
+     "text": "Diego no te quiere ahí. Vas a tener que aguantar su cara.",
+     "next": "c9d",
+     "fx": {
+      "diego": {
+       "trust": 1
+      },
+      "ivan": {
+       "tension": 1
+      }
+     }
+    }
+   ],
+   "chapter": 9,
+   "title": ""
+  },
+  "c9d": {
+   "chat": "narration",
+   "incoming": [
+    {
+     "who": "narrator",
+     "text": "El mercado de la 12 huele a cítrico pasado y aceite. El portón gris cede. Adentro, entre estantes de filtros, Mateo está sentado en un banco, con la sudadera sucia y el teléfono sin batería."
+    },
+    {
+     "who": "narrator",
+     "text": "Dice que lo subieron «para hablar», que Rafael se asustó cuando pidió irse, y que oyó tu nombre porque Iván lo repitió."
+    }
+   ],
+   "choices": [
+    {
+     "text": "Primero salimos. Las preguntas, afuera.",
+     "next": "c9e",
+     "fx": {
+      "mateo": {
+       "trust": 2,
+       "close": 2
+      }
+     },
+     "flag": "mateo_out"
+    },
+    {
+     "text": "¿Puedes caminar? Lucía está a una llamada.",
+     "next": "c9e",
+     "fx": {
+      "lucia": {
+       "trust": 1
+      },
+      "mateo": {
+       "close": 1
+      }
+     }
+    },
+    {
+     "text": "¿Quién más te vio la cara?",
+     "next": "c9e",
+     "fx": {
+      "valeria": {
+       "trust": 1
+      }
+     }
+    },
+    {
+     "text": "Iván está fuera. Si no quieres verlo, no lo ves.",
+     "next": "c9e",
+     "fx": {
+      "mateo": {
+       "trust": 2
+      }
+     }
+    }
+   ],
+   "chapter": 9,
+   "title": ""
+  },
+  "c9e": {
+   "chat": "mateo",
+   "incoming": [
+    {
+     "who": "mateo",
+     "text": "Estoy bien. Moretones, no película. Rafael quería que borrara la lista. La lista sigue en la papelería, debajo del segundo cajón. No la toqué."
+    },
+    {
+     "who": "mateo",
+     "text": "Iván no me golpeó. Hizo la llamada. Eso también cuenta."
+    }
+   ],
+   "choices": [
+    {
+     "text": "La lista se recupera hoy. Tú no vuelves solo.",
+     "next": "c9end",
+     "fx": {
+      "mateo": {
+       "trust": 2,
+       "close": 2
+      }
+     },
+     "flag": "list_safe"
+    },
+    {
+     "text": "Tu versión queda registrada, no interpretada.",
+     "next": "c9end",
+     "fx": {
+      "valeria": {
+       "trust": 1
+      },
+      "mateo": {
+       "trust": 1
+      }
+     }
+    },
+    {
+     "text": "Iván va a tener que decirlo delante de más gente.",
+     "next": "c9end",
+     "fx": {
+      "ivan": {
+       "tension": 2
+      },
+      "mateo": {
+       "trust": 1
+      }
+     }
+    },
+    {
+     "text": "Perdón por llegar con este retraso.",
+     "next": "c9end",
+     "fx": {
+      "mateo": {
+       "close": 2
+      }
+     }
+    }
+   ],
+   "chapter": 9,
+   "title": ""
+  },
+  "c9end": {
+   "chat": "group",
+   "incoming": [
+    {
+     "who": "diego",
+     "text": "Lo tenemos. No voy a hacer un discurso."
+    },
+    {
+     "who": "angela",
+     "text": "La madre de Mateo ya va en camino. Rafael no estaba en la bodega."
+    },
+    {
+     "who": "valeria",
+     "text": "La lista apareció donde dijo. Nombres, equipos, una deuda anotada como «Nene»."
+    }
+   ],
+   "choices": [
+    {
+     "text": "Rafael sigue pendiente. Esta noche no se cierra del todo.",
+     "next": "c10a",
+     "fx": {
+      "valeria": {
+       "trust": 1
+      }
+     },
+     "flag": "rafael_open"
+    },
+    {
+     "text": "Mateo descansa. El grupo, mínimo hasta mañana.",
+     "next": "c10a",
+     "fx": {
+      "mateo": {
+       "close": 1
+      },
+      "angela": {
+       "trust": 1
+      }
+     }
+    },
+    {
+     "text": "Iván no se borra del relato porque Mateo camine.",
+     "next": "c10a",
+     "fx": {
+      "ivan": {
+       "tension": 1
+      }
+     }
+    },
+    {
+     "text": "Gracias a quien mandó el mensaje sin nombre.",
+     "next": "c10a",
+     "flag": "thanked_unknown"
+    }
+   ],
+   "chapter": 9,
+   "title": ""
+  },
+  "c10a": {
+   "chat": "mateo",
+   "incoming": [
+    {
+     "who": "mateo",
+     "text": "Mi madre quiere que deje el grupo. Yo no quiero desaparecer dos veces. Dime cómo está la gente, sin filtro bonito."
+    }
+   ],
+   "choices": [
+    {
+     "text": "Diego está furioso y aliviado. Ángela sostiene. Tú no debes administrar eso hoy.",
+     "next": "c10b",
+     "fx": {
+      "mateo": {
+       "trust": 2
+      }
+     }
+    },
+    {
+     "text": "El grupo se partió. Se puede coser, no esta noche.",
+     "next": "c10b",
+     "fx": {
+      "mateo": {
+       "trust": 1
+      }
+     }
+    },
+    {
+     "text": "Iván habló. No alcanza para perdonarlo, sí para ubicarlo.",
+     "next": "c10b",
+     "fx": {
+      "mateo": {
+       "trust": 1
+      },
+      "ivan": {
+       "tension": 1
+      }
+     }
+    },
+    {
+     "text": "Descansa. El informe puede esperar.",
+     "next": "c10b",
+     "fx": {
+      "mateo": {
+       "close": 2
+      }
+     }
+    }
+   ],
+   "chapter": 10,
+   "title": "Consecuencias"
+  },
+  "c10b": {
+   "chat": "diego",
+   "incoming": [
+    {
+     "who": "diego",
+     "text": "No voy a tomar café con Iván. Si el grupo lo exige para «sanar», me bajo."
+    },
+    {
+     "who": "diego",
+     "text": "Contigo sigo, si no me pides que finja que la llamada no existió."
+    }
+   ],
+   "choices": [
+    {
+     "text": "No te pido café ni olvido. Te pido no ir solo por Rafael.",
+     "next": "c10c",
+     "fx": {
+      "diego": {
+       "trust": 2,
+       "close": 1
+      }
+     }
+    },
+    {
+     "text": "Tu límite es claro. Lo respeto.",
+     "next": "c10c",
+     "fx": {
+      "diego": {
+       "trust": 2
+      }
+     }
+    },
+    {
+     "text": "Sansar no está en mi vocabulario.",
+     "next": "c10c",
+     "fx": {
+      "diego": {
+       "close": 1
+      }
+     }
+    },
+    {
+     "text": "Si te bajas, avisa. No desaparezcas tú también.",
+     "next": "c10c",
+     "fx": {
+      "diego": {
+       "close": 2,
+       "tension": 1
+      }
+     }
+    }
+   ],
+   "chapter": 10,
+   "title": ""
+  },
+  "c10c": {
+   "chat": "martina",
+   "incoming": [
+    {
+     "who": "martina",
+     "text": "En casa no me hablan. Iván dice que lo entregué. Yo entregué una frase que podía evitar que Mateo siguiera en esa bodega."
+    },
+    {
+     "who": "martina",
+     "text": "No sé si hice bien. Sé que lo haría otra vez."
+    }
+   ],
+   "choices": [
+    {
+     "text": "Hiciste una cosa difícil y concreta. No te debo un veredicto.",
+     "next": "c10d",
+     "fx": {
+      "martina": {
+       "trust": 2,
+       "close": 2
+      }
+     }
+    },
+    {
+     "text": "Mateo está fuera. Eso no borra el costo en tu casa.",
+     "next": "c10d",
+     "fx": {
+      "martina": {
+       "trust": 2,
+       "close": 1
+      }
+     }
+    },
+    {
+     "text": "Si quieres salir del grupo un tiempo, se entiende.",
+     "next": "c10d",
+     "fx": {
+      "martina": {
+       "trust": 1
+      }
+     }
+    },
+    {
+     "text": "La próxima, dímelo antes de cargar sola.",
+     "next": "c10d",
+     "fx": {
+      "martina": {
+       "close": 1
+      }
+     }
+    }
+   ],
+   "chapter": 10,
+   "title": ""
+  },
+  "c10d": {
+   "chat": "lucia",
+   "incoming": [
+    {
+     "who": "lucia",
+     "text": "Antonio quiere contar lo nuestro antes de que salga como chisme. Yo quiero elegir el día, no el pánico."
+    },
+    {
+     "who": "lucia",
+     "text": "Si alguien te pregunta, ¿qué vas a decir?"
+    }
+   ],
+   "choices": [
+    {
+     "text": "Que no es el caso. Si ustedes lo cuentan, los sostengo.",
+     "next": "c10e",
+     "fx": {
+      "lucia": {
+       "trust": 2,
+       "close": 2
+      }
+     }
+    },
+    {
+     "text": "No diré nada que ustedes no hayan dicho.",
+     "next": "c10e",
+     "fx": {
+      "lucia": {
+       "trust": 2
+      }
+     }
+    },
+    {
+     "text": "Esconderlo más tiempo les va a salir peor.",
+     "next": "c10e",
+     "fx": {
+      "lucia": {
+       "tension": 1
+      }
+     }
+    },
+    {
+     "text": "No es mi noticia. Punto.",
+     "next": "c10e",
+     "fx": {
+      "lucia": {
+       "trust": 1
+      }
+     }
+    }
+   ],
+   "chapter": 10,
+   "title": ""
+  },
+  "c10e": {
+   "chat": "ivan",
+   "incoming": [
+    {
+     "who": "ivan",
+     "text": "Rafael apagó el número. La deuda sigue. Yo voy a declarar lo de la llamada. No me pidas que me haga el héroe del portón."
+    },
+    {
+     "who": "ivan",
+     "text": "Si Martina quiere distancia, se la doy. Aunque duela."
+    }
+   ],
+   "choices": [
+    {
+     "text": "Declarar la llamada es el mínimo. El héroe no te lo pedí.",
+     "next": "c10end",
+     "fx": {
+      "ivan": {
+       "trust": 1
+      }
+     },
+     "flag": "ivan_statement"
+    },
+    {
+     "text": "La distancia con Martina no se anuncia. Se cumple.",
+     "next": "c10end",
+     "fx": {
+      "martina": {
+       "trust": 1
+      },
+      "ivan": {
+       "trust": 1
+      }
+     }
+    },
+    {
+     "text": "Rafael apagado no es Rafael ido.",
+     "next": "c10end",
+     "fx": {
+      "valeria": {
+       "trust": 1
+      }
+     }
+    },
+    {
+     "text": "No hables conmigo de redención. Habla con la hoja.",
+     "next": "c10end",
+     "fx": {
+      "ivan": {
+       "tension": 1
+      }
+     }
+    }
+   ],
+   "chapter": 10,
+   "title": ""
+  },
+  "c10end": {
+   "chat": "angela",
+   "incoming": [
+    {
+     "who": "angela",
+     "text": "Hoy el grupo no necesita una conclusión bonita. Necesita saber que Mateo duerme en su casa."
+    },
+    {
+     "who": "angela",
+     "text": "Tú también puedes salir del centro. No todo tiene que pasar por tu chat."
+    }
+   ],
+   "choices": [
+    {
+     "text": "Esta noche salgo. Mañana reviso qué quedó abierto.",
+     "next": "c11a",
+     "fx": {
+      "angela": {
+       "trust": 2,
+       "close": 1
+      }
+     }
+    },
+    {
+     "text": "Quedo un rato por si Mateo escribe.",
+     "next": "c11a",
+     "fx": {
+      "mateo": {
+       "close": 1
+      }
+     }
+    },
+    {
+     "text": "El centro me lo puse yo. También me lo puedo quitar.",
+     "next": "c11a",
+     "fx": {
+      "angela": {
+       "close": 2
+      }
+     }
+    },
+    {
+     "text": "Hay un número sin nombre que todavía no cierra.",
+     "next": "c11a",
+     "fx": {
+      "valeria": {
+       "trust": 1
+      }
+     }
+    }
+   ],
+   "chapter": 10,
+   "title": ""
+  },
+  "c11a": {
+   "chat": "mateo",
+   "incoming": [
+    {
+     "who": "mateo",
+     "text": "Dormí cuatro horas. Suficiente para saber que no quiero ser el desaparecido profesional del grupo."
+    },
+    {
+     "who": "mateo",
+     "text": "La policía se llevó copia de la lista. Rafael sigue sin ficha clara. Me pidieron no volver solo a la esquina. En eso sí les haré caso."
+    }
+   ],
+   "choices": [
+    {
+     "text": "Te tomo la palabra de la esquina.",
+     "next": "c11b",
+     "fx": {
+      "mateo": {
+       "trust": 2
+      }
+     }
+    },
+    {
+     "text": "Si declaras, que alguien vaya contigo. No por fragilidad: por acta.",
+     "next": "c11b",
+     "fx": {
+      "mateo": {
+       "trust": 1
+      },
+      "valeria": {
+       "trust": 1
+      }
+     }
+    },
+    {
+     "text": "El grupo puede existir sin girar alrededor de tu susto.",
+     "next": "c11b",
+     "fx": {
+      "mateo": {
+       "close": 1
+      }
+     }
+    },
+    {
+     "text": "Me alegra oírte escribir frases largas.",
+     "next": "c11b",
+     "fx": {
+      "mateo": {
+       "close": 2
+      }
+     }
+    }
+   ],
+   "chapter": 11,
+   "title": "Lo que queda"
+  },
+  "c11b": {
+   "chat": "valeria",
+   "incoming": [
+    {
+     "who": "valeria",
+     "text": "Crucé la lista con un robo menor del laboratorio, de hace un mes. Coinciden tres equipos. No es una fantasía de Mateo."
+    },
+    {
+     "who": "valeria",
+     "text": "El número que te escribió anoche no vuelve a conectar. Quien avisó no quiere medalla ni seguimiento."
+    }
+   ],
+   "choices": [
+    {
+     "text": "La coincidencia entra al cuaderno como confirmada.",
+     "next": "c11c",
+     "fx": {
+      "valeria": {
+       "trust": 2
+      }
+     },
+     "flag": "lab_match"
+    },
+    {
+     "text": "El anónimo puede ser miedo, no misterio.",
+     "next": "c11c",
+     "fx": {
+      "valeria": {
+       "trust": 1
+      }
+     }
+    },
+    {
+     "text": "Si reaparece, no le prometo silencio eterno.",
+     "next": "c11c",
+     "fx": {
+      "valeria": {
+       "close": 1
+      }
+     }
+    },
+    {
+     "text": "Deja el número. Ya cumplió.",
+     "next": "c11c"
+    }
+   ],
+   "chapter": 11,
+   "title": ""
+  },
+  "c11c": {
+   "chat": "sofia",
+   "incoming": [
+    {
+     "who": "sofia",
+     "text": "No publiqué la caja. La tiene Valeria y la copia del parte. Me siento rara sin subirla: como si el archivo no estuviera completo."
+    },
+    {
+     "who": "sofia",
+     "text": "Completo no siempre es público. Me lo repito."
+    }
+   ],
+   "choices": [
+    {
+     "text": "Completo es que exista, no que circule.",
+     "next": "c11d",
+     "fx": {
+      "sofia": {
+       "trust": 2,
+       "close": 1
+      }
+     }
+    },
+    {
+     "text": "Hiciste el corte correcto.",
+     "next": "c11d",
+     "fx": {
+      "sofia": {
+       "trust": 1
+      }
+     }
+    },
+    {
+     "text": "Si algún día hace falta, ya sabemos dónde está.",
+     "next": "c11d",
+     "fx": {
+      "sofia": {
+       "trust": 1
+      }
+     }
+    },
+    {
+     "text": "Tu archivo no es el grupo.",
+     "next": "c11d",
+     "fx": {
+      "sofia": {
+       "tension": 1,
+       "close": 1
+      }
+     }
+    }
+   ],
+   "chapter": 11,
+   "title": ""
+  },
+  "c11d": {
+   "chat": "antonio",
+   "incoming": [
+    {
+     "who": "antonio",
+     "text": "Lucía y yo lo dijimos hoy, en pequeño. Diego no aplaudió. Tampoco lo usó. Con eso me basta."
+    },
+    {
+     "who": "antonio",
+     "text": "Contigo quedé mal en el tono. No en los hechos. Si sirve una frase sin discurso: gracias por no convertir la hora en escándalo."
+    }
+   ],
+   "choices": [
+    {
+     "text": "El tono se puede corregir. El escándalo no hacía falta.",
+     "next": "c11e",
+     "fx": {
+      "antonio": {
+       "trust": 2
+      }
+     }
+    },
+    {
+     "text": "Diego no aplaudir también es una forma de respeto.",
+     "next": "c11e",
+     "fx": {
+      "antonio": {
+       "trust": 1
+      },
+      "diego": {
+       "trust": 1
+      }
+     }
+    },
+    {
+     "text": "La próxima, el recorrido se dice antes.",
+     "next": "c11e",
+     "fx": {
+      "antonio": {
+       "tension": 1,
+       "trust": 1
+      }
+     }
+    },
+    {
+     "text": "No colecciono disculpas. Sigue cooperando.",
+     "next": "c11e",
+     "fx": {
+      "antonio": {
+       "trust": 1
+      }
+     }
+    }
+   ],
+   "chapter": 11,
+   "title": ""
+  },
+  "c11e": {
+   "chat": "angela",
+   "incoming": [
+    {
+     "who": "angela",
+     "text": "Hoy no traduje a nadie. Cocinamos pasta mala en casa de Diego y Mateo se quedó dormido en el sillón. Foto no hay. Sofía se contuvo."
+    },
+    {
+     "who": "angela",
+     "text": "Si quieres pasar, hay plato. Si no, el grupo sobrevive una noche sin ti."
+    }
+   ],
+   "choices": [
+    {
+     "text": "Paso. Llevo algo que no sea pasta mala.",
+     "next": "c11end",
+     "fx": {
+      "angela": {
+       "close": 2
+      },
+      "diego": {
+       "close": 1
+      }
+     },
+     "flag": "went_pasta"
+    },
+    {
+     "text": "Hoy no. Me alegra que exista sin mí.",
+     "next": "c11end",
+     "fx": {
+      "angela": {
+       "trust": 2
+      }
+     }
+    },
+    {
+     "text": "Despierten a Mateo si se queda en una posición imposible.",
+     "next": "c11end",
+     "fx": {
+      "mateo": {
+       "close": 1
+      }
+     }
+    },
+    {
+     "text": "Guarden un plato. Llego tarde.",
+     "next": "c11end",
+     "fx": {
+      "angela": {
+       "close": 1
+      }
+     }
+    }
+   ],
+   "chapter": 11,
+   "title": ""
+  },
+  "c11end": {
+   "chat": "narration",
+   "incoming": [
+    {
+     "who": "narrator",
+     "text": "La colonia vuelve a sonar a portones y a una moto lejana. En el sillón, Mateo respira como quien por fin no tiene que contestar. El cuaderno de Winteres queda con horas, una van, una lista y un nombre que no estaba en el grupo."
+    },
+    {
+     "who": "narrator",
+     "text": "Nada de eso convierte la noche en un accidente. La vuelve contable."
+    }
+   ],
+   "choices": [
+    {
+     "text": "Cierro el cuaderno, no el caso de Rafael.",
+     "next": "c12a",
+     "fx": {
+      "valeria": {
+       "trust": 1
+      }
+     }
+    },
+    {
+     "text": "Le escribo a Mateo solo «estoy».",
+     "next": "c12a",
+     "fx": {
+      "mateo": {
+       "close": 1
+      }
+     }
+    },
+    {
+     "text": "Reviso que Martina haya comido.",
+     "next": "c12a",
+     "fx": {
+      "martina": {
+       "close": 1
+      }
+     }
+    },
+    {
+     "text": "Dejo el teléfono boca abajo una hora.",
+     "next": "c12a",
+     "fx": {
+      "angela": {
+       "trust": 1
+      }
+     }
+    }
+   ],
+   "chapter": 11,
+   "title": ""
+  },
+  "c12a": {
+   "chat": "unknown",
+   "incoming": [
+    {
+     "who": "unknown",
+     "text": "No era solo Iván. Rafael recibe encargos de alguien que firma como «C». La lista de teléfonos era una entrega, no el negocio."
+    },
+    {
+     "who": "unknown",
+     "text": "Si siguen, que no sea por el chat del grupo. Ahí ya hay ojos."
+    }
+   ],
+   "choices": [
+    {
+     "text": "¿Quién es C? Una inicial no me basta.",
+     "next": "c12b",
+     "fx": {
+      "valeria": {
+       "trust": 1
+      }
+     },
+     "flag": "asked_c"
+    },
+    {
+     "text": "Lo guardo fuera del grupo.",
+     "next": "c12b",
+     "flag": "kept_c_private"
+    },
+    {
+     "text": "Si es cebo, es buen cebo. No corro.",
+     "next": "c12b"
+    },
+    {
+     "text": "Mateo ya pagó esta historia. No lo vuelvo a poner de gancho.",
+     "next": "c12b",
+     "fx": {
+      "mateo": {
+       "trust": 2
+      }
+     }
+    }
+   ],
+   "chapter": 12,
+   "title": "Algo permanece"
+  },
+  "c12b": {
+   "chat": "unknown",
+   "incoming": [
+    {
+     "who": "unknown",
+     "text": "C no está en La Colmena. Estudia, o enseña, en la uni. Más de eso no suelto. El que avisó de la bodega fui yo. No repitan este número."
+    },
+    {
+     "who": "unknown",
+     "text": "Temporada que sigue, si la hay, no empieza con un desconocido amable. Empieza con alguien que ya sabe cómo se mueven."
+    }
+   ],
+   "choices": [
+    {
+     "text": "Número anotado como no responder. La inicial se queda.",
+     "next": "c12c",
+     "fx": {
+      "valeria": {
+       "trust": 1
+      }
+     },
+     "flag": "c_noted"
+    },
+    {
+     "text": "Se lo digo solo a Valeria.",
+     "next": "c12c",
+     "fx": {
+      "valeria": {
+       "trust": 2
+      }
+     }
+    },
+    {
+     "text": "No le creo el misterio completo. Sí la bodega.",
+     "next": "c12c"
+    },
+    {
+     "text": "Si C toca a Mateo otra vez, no hay chat que valga.",
+     "next": "c12c",
+     "fx": {
+      "mateo": {
+       "close": 1
+      }
+     }
+    }
+   ],
+   "chapter": 12,
+   "title": ""
+  },
+  "c12c": {
+   "chat": "valeria",
+   "incoming": [
+    {
+     "who": "valeria",
+     "text": "Si me pasas esa inicial, no la convierto en hilo público. La cruzo con la lista cuando haya copia oficial."
+    },
+    {
+     "who": "valeria",
+     "text": "Hasta entonces, el caso de Mateo está resuelto a medias: vivo, con moretones, con un autor material fuera y un autor de la llamada identificado."
+    }
+   ],
+   "choices": [
+    {
+     "text": "Te paso la inicial. El grupo no.",
+     "next": "c12d",
+     "fx": {
+      "valeria": {
+       "trust": 2
+      }
+     },
+     "flag": "told_valeria_c"
+    },
+    {
+     "text": "Espera a la copia oficial. No alimentamos fantasmas.",
+     "next": "c12d",
+     "fx": {
+      "valeria": {
+       "trust": 1
+      }
+     }
+    },
+    {
+     "text": "Autor de la llamada no es lo mismo que autor del encargo.",
+     "next": "c12d",
+     "fx": {
+      "valeria": {
+       "trust": 2
+      }
+     }
+    },
+    {
+     "text": "Medias resoluciones también se archivan.",
+     "next": "c12d",
+     "fx": {
+      "valeria": {
+       "close": 1
+      }
+     }
+    }
+   ],
+   "chapter": 12,
+   "title": ""
+  },
+  "c12d": {
+   "chat": "mateo",
+   "incoming": [
+    {
+     "who": "mateo",
+     "text": "Vi que seguías en línea. No me debes un final épico. Me debes, si acaso, el atajo que no recorrimos."
+    },
+    {
+     "who": "mateo",
+     "text": "Mañana, si quieres. De día. Con gente en la calle. Sin sodas."
+    }
+   ],
+   "choices": [
+    {
+     "text": "Mañana. De día. Sin sodas.",
+     "next": "c12end",
+     "fx": {
+      "mateo": {
+       "trust": 2,
+       "close": 2
+      }
+     },
+     "flag": "walk_tomorrow"
+    },
+    {
+     "text": "El atajo puede esperar a que Rafael tenga cara.",
+     "next": "c12end",
+     "fx": {
+      "mateo": {
+       "trust": 1
+      }
+     }
+    },
+    {
+     "text": "Voy, y no como escolta. Como vecino.",
+     "next": "c12end",
+     "fx": {
+      "mateo": {
+       "close": 2
+      }
+     }
+    },
+    {
+     "text": "Hoy cierra el chat. Mañana veo.",
+     "next": "c12end",
+     "fx": {
+      "mateo": {
+       "trust": 1
+      }
+     }
+    }
+   ],
+   "chapter": 12,
+   "title": ""
+  },
+  "c12end": {
+   "chat": "narration",
+   "incoming": [
+    {
+     "who": "narrator",
+     "text": "Winteres queda en silencio un momento. La Colmena tiene mensajes sin leer y una foto que no se publicó. En algún lugar de la uni, alguien firma como C y todavía no tiene retrato."
+    },
+    {
+     "who": "narrator",
+     "text": "Mateo está en su casa. Eso era la primera temporada. Lo que sigue no cabe en un solo mensaje."
+    }
+   ],
+   "choices": [
+    {
+     "text": "Cierro la temporada con el cuaderno exportado.",
+     "next": "END",
+     "fx": {
+      "mateo": {
+       "close": 1
+      }
+     },
+     "flag": "exported_mind"
+    },
+    {
+     "text": "Dejo La Colmena silenciada, no borrada.",
+     "next": "END"
+    },
+    {
+     "text": "Le escribo a Martina: «gracias».",
+     "next": "END",
+     "fx": {
+      "martina": {
+       "close": 2
+      }
+     }
+    },
+    {
+     "text": "Apago la pantalla. La esquina sigue ahí.",
+     "next": "END"
+    }
+   ],
+   "chapter": 12,
+   "title": ""
+  }
+ }
+}

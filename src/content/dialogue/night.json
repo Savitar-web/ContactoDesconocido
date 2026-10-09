@@ -1,0 +1,729 @@
+{
+  "beats": [
+    {
+      "id": "invita",
+      "chat": "mateo",
+      "incoming": [
+        {
+          "who": "mateo",
+          "text": "{name}, este viernes iban a quedarse en mi depa. Colchonetas, una película mala y la regla de Diego: si cancelas, avisas antes de las ocho. Quería que vinieras. No es una prueba. Es la primera vez que el grupo no se junta en el pasillo."
+        }
+      ],
+      "choices": [
+        {
+          "text": "Voy. Dime qué llevo y a qué hora. No prometo ser la mejor compañía, pero no voy a cancelar a las nueve.",
+          "next": "cancela",
+          "replies": [
+            {
+              "who": "mateo",
+              "text": "Entonces cuenta con eso. No lleves nada: hay colchonetas. Iba a ser a las nueve. Lo de no cancelar a las nueve me importa más que la compañía."
+            }
+          ]
+        },
+        {
+          "text": "Me da cosa entrar a una casa llena de gente que no conozco. Si es en tu depa, ¿puedo llegar y quedarme poco?",
+          "next": "cancela",
+          "replies": [
+            {
+              "who": "mateo",
+              "text": "Puedes quedarte poco. No es una prueba de permanencia. Si a los veinte minutos quieres irte, te abro la puerta y no lo comento en el grupo."
+            }
+          ]
+        },
+        {
+          "text": "Si es pijamada de verdad, no de exhibición, voy. Si van a grabar, no.",
+          "next": "cancela",
+          "replies": [
+            {
+              "who": "mateo",
+              "text": "Nadie graba. Sofía a veces foto el cielo, no las caras. Si saca el teléfono hacia ti, se lo digo yo. Con esa condición, ven."
+            }
+          ]
+        },
+        {
+          "text": "Todavía no sé. No me gusta que me anoten en planes antes de preguntarme.",
+          "next": "cancela",
+          "replies": [
+            {
+              "who": "mateo",
+              "text": "Tienes razón. Te anoté antes de preguntarte. Lo retiro. Si quieres venir, vienes. Si no, no te vuelvo a poner en la lista."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cancela",
+      "chat": "mateo",
+      "incoming": [
+        {
+          "who": "mateo",
+          "text": "Diego canceló. Su papá sigue en observación y no quiere dejar la sala. Lucía también: le cayó un turno de simulacro y no va a fingir que puede. Ángela dijo que sin ellos la casa se siente a medias. Propuse hacerlo por el chat, todos, con la luz baja. No es lo mismo. Es lo que quedó."
+        }
+      ],
+      "choices": [
+        {
+          "text": "Entonces por el chat. No voy a hacer que se sientan mal por no estar en tu sala.",
+          "next": "abre",
+          "replies": [
+            {
+              "who": "mateo",
+              "text": "Eso mismo les dije. Diego no quiere lástima y Lucía no quiere que la esperemos. El chat no los sustituye, pero no los obliga."
+            }
+          ]
+        },
+        {
+          "text": "Si ya se canceló, no lo disfracemos de pijamada. Podemos hablar y ya.",
+          "next": "abre",
+          "replies": [
+            {
+              "who": "mateo",
+              "text": "De acuerdo. No le voy a decir pijamada. Les digo que nos quedamos en el chat porque la casa se cayó. Sin disfraz."
+            }
+          ]
+        },
+        {
+          "text": "Me quedo. Quiero ver cómo son cuando no están posando para una visita.",
+          "next": "abre",
+          "replies": [
+            {
+              "who": "mateo",
+              "text": "Entonces no te los presento por turnos. Entran como entran. Diego va a sonar brusco y no es contigo."
+            }
+          ]
+        },
+        {
+          "text": "Avísales que yo sí entro, aunque sea desde mi cama.",
+          "next": "abre",
+          "replies": [
+            {
+              "who": "mateo",
+              "text": "Ya se lo escribo. Desde tu cama cuenta. No tienes que fingir que cruzaste la calle."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "abre",
+      "chat": "group",
+      "incoming": [
+        {
+          "who": "mateo",
+          "text": "La pijamada en casa se canceló. Diego no puede salir del hospital y Lucía tiene turno. Si quieren, la hacemos aquí. Luces bajas, lo que estén comiendo, y nadie obligado a contar su vida."
+        },
+        {
+          "who": "angela",
+          "text": "Me quedo. No traduzco a nadie esta noche. Si alguien no quiere hablar, que no hable."
+        },
+        {
+          "who": "sofia",
+          "text": "Estoy en el suelo, con un plato que no voy a fotografiar. El portón de servicio sigue con la cadena suelta. Lo digo porque es el antes, no porque sea una denuncia."
+        },
+        {
+          "who": "diego",
+          "text": "Estoy en la sala. No voy a narrar el parte. Si se vuelve confesionario, me salgo. No es castigo."
+        },
+        {
+          "who": "antonio",
+          "text": "Presente. No voy a dar discurso de bienvenida a {name}. Ya está aquí. Eso basta."
+        },
+        {
+          "who": "valeria",
+          "text": "Anoto la hora porque soy así, no porque haya un caso. 21:06. Si alguien cambia su versión mañana, no me miren."
+        },
+        {
+          "who": "lucia",
+          "text": "Entro y salgo. El simulacro no pide permiso. {name}, si tardo no es distancia."
+        },
+        {
+          "who": "martina",
+          "text": "Estoy. No voy a llenar el silencio."
+        },
+        {
+          "who": "ivan",
+          "text": "Llegué tarde al chat y temprano a nada. Si esto es la pijamada, que alguien pase las papas por mensaje."
+        }
+      ],
+      "choices": [
+        {
+          "text": "Hola. Soy {name}. No hace falta que me presenten por turnos.",
+          "next": "amigo",
+          "replies": [
+            {
+              "who": "angela",
+              "text": "{name}, gracias. Iba a hacer exactamente la ronda de nombres y me la ahorraste."
+            },
+            {
+              "who": "diego",
+              "text": "Bien. Yo soy Diego. Estoy en un hospital, no en una fiesta. Con eso basta."
+            }
+          ]
+        },
+        {
+          "text": "Gracias por no convertir esto en una asamblea. Estoy en la cama, con la luz del pasillo.",
+          "next": "amigo",
+          "replies": [
+            {
+              "who": "mateo",
+              "text": "La luz del pasillo es la de mi casa también. Mi mamá no la apaga. Me alegra que no pidas orden del día."
+            }
+          ]
+        },
+        {
+          "text": "Sofía, lo del portón lo cierro yo si sigue suelto. No hace falta foto.",
+          "next": "amigo",
+          "replies": [
+            {
+              "who": "sofia",
+              "text": "No te pedí que lo cierres. Lo dije porque estaba suelto a las 19:12. Si lo cierras, avisa, para no archivar una cosa que ya cambió."
+            }
+          ]
+        },
+        {
+          "text": "Diego, no te pedimos el parte. Quédate si puedes y cállate si quieres.",
+          "next": "amigo",
+          "replies": [
+            {
+              "who": "diego",
+              "text": "Eso sí lo puedo hacer. Me quedo. No narro. Si el chat se pone sentimental, igual me salgo."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "amigo",
+      "chat": "group",
+      "incoming": [
+        {
+          "who": "mateo",
+          "text": "Hoy conocí a alguien en la papelería. Se llama Rafael. Me invitó el tono, no sé. Le dije si quería salir a caminar, nada raro, un café o la banqueta. Me dijo que no. Seco. Se fue con el encargo a medias y ni volteó cuando le dije que el portón estaba abierto."
+        },
+        {
+          "who": "angela",
+          "text": "Un no es un no. No lo conviertas en misterio, Mateo."
+        },
+        {
+          "who": "sofia",
+          "text": "La gente seca existe. También la gente que no quiere café con un desconocido amable. No es una película."
+        },
+        {
+          "who": "diego",
+          "text": "Si te dijo que no, se acabó. No le escribas para explicarle que eres buena persona."
+        },
+        {
+          "who": "antonio",
+          "text": "A veces el no esconde otra cosa. No siempre. Hoy no tienes prueba de nada."
+        }
+      ],
+      "choices": [
+        {
+          "text": "Si te rechazó la salida, déjalo ahí. No todo rechazo es una pista.",
+          "next": "ruido",
+          "replies": [
+            {
+              "who": "mateo",
+              "text": "Lo dejo. Me sonó seco y por eso lo conté, no porque quiera investigarlo. Un no es un no. Ángela ya me lo dijo y tiene razón."
+            }
+          ]
+        },
+        {
+          "text": "¿Cómo se veía? No para juzgarlo. Para saber si era prisa o desprecio.",
+          "next": "ruido",
+          "replies": [
+            {
+              "who": "mateo",
+              "text": "Prisa, creo. Sudadera gris, una caja, ni volteó. No hubo insulto. Tampoco una excusa. Por eso no sé si era desprecio o el encargo."
+            }
+          ]
+        },
+        {
+          "text": "Mateo, tú invitas fácil. No todo el mundo quiere que lo cuiden.",
+          "next": "ruido",
+          "replies": [
+            {
+              "who": "mateo",
+              "text": "También. Se lo ofrecí como si un café arreglara el día de un desconocido. Pudo leer cuidado donde yo leí compañía. No vuelvo a escribirle."
+            }
+          ]
+        },
+        {
+          "text": "Rafael. Me quedo con el nombre y con nada más, por ahora.",
+          "next": "ruido",
+          "replies": [
+            {
+              "who": "valeria",
+              "text": "Rafael, papelería, rechazo, caja. Lo anoto porque tú lo dejaste en el chat, no porque ya sea un caso."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ruido",
+      "chat": "group",
+      "incoming": [
+        {
+          "who": "mateo",
+          "text": "Perdón. Escucho algo afuera. No es el vecino del 2. Es en el portón de servicio, del lado de la cadena. Como si arrastraran algo metálico."
+        },
+        {
+          "who": "angela",
+          "text": "{name}, dile que no salga. Mateo, no salgas. Cierra y escribe desde dentro."
+        },
+        {
+          "who": "sofia",
+          "text": "Es el mapache de la colonia, héroe. O la cadena, que ya estaba suelta a las 19:12. No te hagas la película."
+        },
+        {
+          "who": "diego",
+          "text": "No bajes. No es broma. Si es alguien, que se aburra. Tú no eres el portero."
+        },
+        {
+          "who": "ivan",
+          "text": "Ve, graba y nos debes la historia. O no vayas y nos debes la decepción. Elijo la segunda, por si acaso."
+        },
+        {
+          "who": "lucia",
+          "text": "Mateo, en serio. Quédate. Si es nada, mañana te reímos. Si no es nada, no estás solo en la banqueta."
+        },
+        {
+          "who": "valeria",
+          "text": "22:41. Si sales, di la hora en la que vuelves. No es control. Es para no inventar después."
+        },
+        {
+          "who": "martina",
+          "text": "No vayas."
+        },
+        {
+          "who": "antonio",
+          "text": "Cierra la ventana. El orgullo de ir a mirar no te va a devolver la noche."
+        }
+      ],
+      "choices": [
+        {
+          "text": "Mateo, no salgas. Quédate en el chat. Si es la cadena, mañana la vemos de día.",
+          "next": "sale",
+          "replies": [
+            {
+              "who": "mateo",
+              "text": "Te leí. Ángela dijo lo mismo. Me cuesta quedarme cuando oigo la cadena, pero si me lo pides así, espero un minuto más."
+            }
+          ]
+        },
+        {
+          "text": "Si vas, no vayas solo. Espera a que alguien esté en la calle. Yo no llego a tiempo.",
+          "next": "sale",
+          "replies": [
+            {
+              "who": "mateo",
+              "text": "No llegas, lo sé. Diego está en el hospital. No hay nadie en la calle. Por eso dudo. No quiero bajar solo y tampoco quiero dejar el ruido."
+            }
+          ]
+        },
+        {
+          "text": "Sofía tiene razón en la cadena, y Ángela en el miedo. Las dos pueden ser ciertas. No bajes.",
+          "next": "sale",
+          "replies": [
+            {
+              "who": "sofia",
+              "text": "Gracias por no elegir una. La cadena estaba suelta. Eso no vuelve el ruido inofensivo."
+            },
+            {
+              "who": "angela",
+              "text": "Eso. Quédate, Mateo. Mañana se mira de día."
+            }
+          ]
+        },
+        {
+          "text": "Ve a la ventana, no al portón. Mira y vuelve a escribir. Nada más.",
+          "next": "sale",
+          "replies": [
+            {
+              "who": "mateo",
+              "text": "Eso sí. Ventana, no banqueta. Ya estoy en el cristal. No veo gente. Veo la cadena moviéndose, y no hay viento."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sale",
+      "chat": "group",
+      "incoming": [
+        {
+          "who": "mateo",
+          "text": "Voy a la esquina de la tienda. Diez minutos. Si es la cadena, la dejo y subo. No apaguen el chat."
+        },
+        {
+          "who": "angela",
+          "text": "Mateo."
+        },
+        {
+          "who": "diego",
+          "text": "Escribe cuando estés en el pasillo. No cuando «ya casi»."
+        }
+      ],
+      "choices": [
+        {
+          "text": "Escribe al subir. No al «ya voy».",
+          "next": "silencio",
+          "replies": [
+            {
+              "who": "mateo",
+              "text": "Entendido. No te escribo el ya voy. Te escribo cuando esté en el pasillo. Si no llega ese mensaje, no es que se me olvidó."
+            }
+          ]
+        },
+        {
+          "text": "Si no contestas en diez, llamamos a la caseta.",
+          "next": "silencio",
+          "replies": [
+            {
+              "who": "mateo",
+              "text": "Diez minutos. Si no escribo, caseta. No llamen a mi mamá primero: se asusta y apaga la luz del pasillo."
+            }
+          ]
+        },
+        {
+          "text": "No me gusta esto. Quédate.",
+          "next": "silencio",
+          "replies": [
+            {
+              "who": "mateo",
+              "text": "A mí tampoco me gusta. Por eso bajé la voz. Me quedo un momento. El ruido sigue."
+            }
+          ]
+        },
+        {
+          "text": "Te esperamos. No hagas el héroe.",
+          "next": "silencio",
+          "replies": [
+            {
+              "who": "mateo",
+              "text": "No es de héroe. Es el portón de mi casa. Los leo. Si bajo, no es por el grupo. Es porque nadie más va a mirar."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "silencio",
+      "chat": "group",
+      "incoming": [
+        {
+          "who": "angela",
+          "text": "Lleva cuatro minutos sin el «escribiendo»."
+        },
+        {
+          "who": "sofia",
+          "text": "Le tomé foto al portón a las 22:41, antes de que dijera que bajaba. Placa tapada. No sé si importa. La dejo aquí y no la adorno."
+        },
+        {
+          "who": "valeria",
+          "text": "Último mensaje de Mateo, 22:44. Si alguien tiene otra hora, que la diga ahora."
+        },
+        {
+          "who": "diego",
+          "text": "No está en el hospital. Pregunté. No romanticen la espera."
+        }
+      ],
+      "choices": [
+        {
+          "text": "Nadie va solo a esa esquina esta noche.",
+          "next": "manana",
+          "replies": [
+            {
+              "who": "diego",
+              "text": "Bien dicho. Ni tú, {name}. Si alguien propone ir ahora, le digo que no."
+            }
+          ]
+        },
+        {
+          "text": "Sofía, no borres esa foto.",
+          "next": "manana",
+          "flag": "evidence_van",
+          "replies": [
+            {
+              "who": "sofia",
+              "text": "No la borro. La acabo de dejar en el grupo porque tú lo pediste, no para armar expediente."
+            }
+          ]
+        },
+        {
+          "text": "Valeria, guarda las horas. Mañana las vamos a necesitar.",
+          "next": "manana",
+          "flag": "timestamps",
+          "replies": [
+            {
+              "who": "valeria",
+              "text": "22:44 su último mensaje. 22:41 la foto de Sofía. Si la caseta dice otra cosa mañana, lo cruzo."
+            }
+          ]
+        },
+        {
+          "text": "Yo le escribo al privado. Si no contesta, no insistimos en tropa.",
+          "next": "manana",
+          "replies": [
+            {
+              "who": "angela",
+              "text": "Escríbele tú. Si no contesta, no lo llenemos entre ocho. Un mensaje, no una redada."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "manana",
+      "chat": "group",
+      "incoming": [
+        {
+          "who": "angela",
+          "text": "Es de día. Mateo no contestó el grupo ni el privado. La caseta dice que el portón de servicio se reinició a las 22:50. No vieron a nadie. O no quieren decirlo."
+        },
+        {
+          "who": "diego",
+          "text": "Fui a su depa. No abre. La luz del pasillo de su mamá sigue prendida. Eso no significa que él esté."
+        },
+        {
+          "who": "lucia",
+          "text": "No durmió en la clínica. Pregunté sin armar novela. No está."
+        },
+        {
+          "who": "ivan",
+          "text": "Yo llegué al turno después de la una. No lo vi. No me pidan que adivine."
+        },
+        {
+          "who": "valeria",
+          "text": "Su cuenta sigue existiendo. No hay «en línea». El privado no entrega. Eso ya no es una siesta."
+        }
+      ],
+      "choices": [
+        {
+          "text": "Entonces investigamos. Sin tribunal y sin héroe suelto.",
+          "next": "plan",
+          "replies": [
+            {
+              "who": "diego",
+              "text": "Sin héroe. Yo puedo la papelería a las cuatro, de día. Si alguien va de noche, no cuenten conmigo."
+            }
+          ]
+        },
+        {
+          "text": "Cada quien dice qué vio, no qué supone.",
+          "next": "plan",
+          "replies": [
+            {
+              "who": "valeria",
+              "text": "Entonces yo vi horas, no intenciones. Sofía vio una placa tapada. Nadie vio a Mateo bajar. Eso es lo que hay."
+            }
+          ]
+        },
+        {
+          "text": "Si alguien miente para cuidar a otro, que lo diga en privado, no aquí.",
+          "next": "plan",
+          "replies": [
+            {
+              "who": "lucia",
+              "text": "Si tengo algo que no es del grupo, no lo suelto aquí. Te escribo. No prometo contarlo todo."
+            }
+          ]
+        },
+        {
+          "text": "Yo hablo con ustedes uno por uno. El grupo no es una sala de interrogatorio.",
+          "next": "plan",
+          "replies": [
+            {
+              "who": "angela",
+              "text": "Mejor. A mí no me preguntes en La Colmena como si tuviera que rendir parte. En privado te contesto."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "plan",
+      "chat": "group",
+      "incoming": [
+        {
+          "who": "angela",
+          "text": "{name}, si vamos a buscarnos en persona, que sea de día y con gente en la calle. No otra esquina vacía."
+        },
+        {
+          "who": "diego",
+          "text": "Yo puedo la papelería a las cuatro. No antes. Y no con Iván, hasta que la hora del turno cuadre."
+        },
+        {
+          "who": "sofia",
+          "text": "Llevo la foto. No la publico. Si alguien me pide que la borre, la archivo peor."
+        }
+      ],
+      "choices": [
+        {
+          "text": "A las cuatro, papelería, de día. Yo llego.",
+          "next": "END",
+          "scene": "papeleria",
+          "replies": [
+            {
+              "who": "diego",
+              "text": "A las cuatro. Te espero en la banqueta, no en el callejón. Si llegas {solo}, Ángela se va a enojar, y con razón."
+            }
+          ]
+        },
+        {
+          "text": "Primero los privados. Después la calle.",
+          "next": "busca",
+          "replies": [
+            {
+              "who": "angela",
+              "text": "Así. Primero hablamos. La calle puede esperar a que sepamos quién dice la verdad y quién está cansado."
+            }
+          ]
+        },
+        {
+          "text": "Si tengo cómo mirar las cuentas, lo hago y les digo qué es prueba y qué es suposición.",
+          "next": "busca",
+          "flag": "hack_intent",
+          "replies": [
+            {
+              "who": "valeria",
+              "text": "Si miras cuentas, separa lo que leíste de lo que crees. Yo no quiero una teoría disfrazada de archivo."
+            }
+          ]
+        },
+        {
+          "text": "Hoy no salimos. Hoy ordenamos lo que ya se dijo.",
+          "next": "busca",
+          "replies": [
+            {
+              "who": "diego",
+              "text": "Mejor. Hoy no sirvo para la calle. Ordenen horas. Yo miro el hospital y el silencio de Mateo."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "busca",
+      "chat": "group",
+      "incoming": [
+        {
+          "who": "angela",
+          "text": "{name}, de día la papelería estaba cerrada con cadena nueva. Eso no devuelve a Mateo. Su privado sigue sin entregar."
+        },
+        {
+          "who": "diego",
+          "text": "Fui a su depa otra vez. La luz del pasillo sigue prendida. Su mamá no abre. No voy a tocar más."
+        },
+        {
+          "who": "valeria",
+          "text": "Si alguien vio a Rafael después de las 22:36, que lo diga aquí. Si no, no inventen una persecución."
+        }
+      ],
+      "choices": [
+        {
+          "text": "No llamemos persecución a un nombre. Preguntemos quién lo vio.",
+          "next": "familias",
+          "replies": [
+            {
+              "who": "valeria",
+              "text": "Entonces pregunto yo, sin teatro. ¿Quién vio a Rafael después de la papelería?"
+            }
+          ]
+        },
+        {
+          "text": "Diego, gracias por ir. No vuelvas solo.",
+          "next": "familias",
+          "replies": [
+            {
+              "who": "diego",
+              "text": "No vuelvo solo. La próxima, si hay próxima, vas tú o no va nadie."
+            }
+          ]
+        },
+        {
+          "text": "Ángela, el privado de Mateo no entrega. No es que nos ignore.",
+          "next": "familias",
+          "replies": [
+            {
+              "who": "angela",
+              "text": "Lo sé. Por eso me asusta más. Ignorar se ve en línea. Esto ni siquiera llega."
+            }
+          ]
+        },
+        {
+          "text": "Si alguien oculta una pareja o una salida, que lo diga antes de que lo encontremos.",
+          "next": "familias",
+          "replies": [
+            {
+              "who": "lucia",
+              "text": "Eso no se dice en el grupo. Si tengo algo, te escribo a ti. No aquí."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "familias",
+      "chat": "group",
+      "incoming": [
+        {
+          "who": "sofia",
+          "text": "La foto de las 22:41 sigue en mi archivo. Placa tapada. No es arte. Si la quieren para el cuaderno, no la borro."
+        },
+        {
+          "who": "ivan",
+          "text": "Yo no vi a Mateo. Llegué al turno después de la una. Si alguien arma otra hora, está mintiendo."
+        },
+        {
+          "who": "antonio",
+          "text": "No conviertan esto en un juicio de parejas. Lo que cada quien tenga en privado no explica el portón."
+        }
+      ],
+      "choices": [
+        {
+          "text": "Sofía, la foto se queda. No es chisme, es hora.",
+          "next": "END",
+          "flag": "evidence_van",
+          "replies": [
+            {
+              "who": "sofia",
+              "text": "Se queda. Si me piden limpieza, archivo peor y te aviso."
+            }
+          ]
+        },
+        {
+          "text": "Iván, la una no cuadra con quien dijo medianoche. No te acuso. Te pido la hora.",
+          "next": "END",
+          "replies": [
+            {
+              "who": "ivan",
+              "text": "La una. Lo dije. Si alguien oyó medianoche, oyó mal o se lo inventó."
+            }
+          ]
+        },
+        {
+          "text": "Antonio, nadie quiere tu vida privada. Quiere saber si alguien salió.",
+          "next": "END",
+          "replies": [
+            {
+              "who": "antonio",
+              "text": "Salir, no. Estuve con Lucía un rato y no en la tienda. Si quieres el resto, no es de este chat."
+            }
+          ]
+        },
+        {
+          "text": "Hoy no acusamos. Hoy dejamos escrito lo que sí vimos.",
+          "next": "END",
+          "replies": [
+            {
+              "who": "valeria",
+              "text": "Hecho. 22:44 último mensaje. 22:50 portón reiniciado. Nadie vio a Mateo bajar."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "rafael": [
+    {
+      "who": "mateo",
+      "text": "Oye, soy el de la papelería. Si el no era prisa, olvídalo. Si era otra cosa, también puedes decirlo."
+    },
+    {
+      "who": "rafael",
+      "text": "Era no. No insistas."
+    },
+    {
+      "who": "mateo",
+      "text": "Está bien. El portón de servicio queda abierto a veces. Por si vuelves por el encargo."
+    },
+    {
+      "who": "rafael",
+      "text": "No vuelvo por ti."
+    },
+    {
+      "who": "rafael",
+      "text": "22:36. Ya va a salir. Esquina de la tienda. No lo toquen fuerte. El encargo se les fue, no el muchacho."
+    }
+  ],
+  "mateo_mama": [
+    {
+      "who": "mama",
+      "text": "Deja la luz del pasillo. Ya no llega tu hermano, pero yo no la apago."
+    },
+    {
+      "who": "mateo",
+      "text": "La dejo. Hoy hay gente en el chat. No tardo."
+    },
+    {
+      "who": "mama",
+      "text": "No bajes si escuchas la cadena. El de la caseta no sale."
+    }
+  ],
+  "diego_angela": [
+    {
+      "who": "diego",
+      "text": "Si Mateo se sienta a cuidar a todos, un día no va a ver quién lo cuida a él."
+    },
+    {
+      "who": "angela",
+      "text": "Lo sé. No se lo digo en el grupo porque se pone a disculparse."
+    }
+  ],
+  "antonio_lucia": [
+    {
+      "who": "antonio",
+      "text": "No le digas al grupo lo nuestro. No es vergüenza. Es que lo van a usar."
+    },
+    {
+      "who": "lucia",
+      "text": "Entonces no hables por mí cuando pregunten. Eso también lo usan."
+    }
+  ],
+  "ivan_extra": [
+    {
+      "who": "desconocido",
+      "text": "El turno que diste no es el turno. La lista no es de la uni."
+    },
+    {
+      "who": "ivan",
+      "text": "Lo sé. No metan a Martina. El pago sale esta semana."
+    },
+    {
+      "who": "desconocido",
+      "text": "El Nene pregunta por el de la papelería. Dice que el chico invita demasiado."
+    }
+  ],
+  "sofia_valeria": [
+    {
+      "who": "sofia",
+      "text": "Guardé el portón a las 19:12 y otra a las 22:41. No es arte."
+    },
+    {
+      "who": "valeria",
+      "text": "No las borres. Si alguien te pide limpieza, es una hora que no quieren."
+    }
+  ]
+}
