@@ -1,21 +1,20 @@
 # Contacto Desconocido
 
-La red social ficticia se llama Winteres. Proyecto React + TypeScript + Vite.
+Winteres es la red social ficticia del juego. React + TypeScript + Vite. Sin servidor y sin cuenta.
 
 ## Jugar
+
 ```
 npm install
 npm run dev
 ```
-Abre la URL que imprime Vite.
 
-## Qué incluye esta versión
-- Doce capítulos y contactos que no aparecen hasta que escriben, o hasta que los abres desde La Colmena.
-- Cuatro respuestas solo después de tocar la burbuja inferior. No abre teclado.
-- Indicador de escribiendo según el largo del mensaje.
-- El chat cabe en la pantalla: se desplaza el historial, no la ventana.
-- Buscar dentro de la conversación.
-- Retratos y logo locales. Lectura en voz alta con la voz del sistema.
-- Exportar partida en JSON.
+## Qué hay
 
-Android (Capacitor) y Windows (Electron) están preparados en `capacitor.config.ts` y `electron/`, no empaquetados en este zip.
+- Alta por secciones, tres partidas, foto de perfil.
+- Historia de la noche: primer mensaje, pijamada cancelada, chat, Rafael, el ruido, el silencio, la investigación y el cuarto de encargos.
+- Cuatro respuestas, sin repetir, después de tocar Responder.
+- Elenco, pruebas y relleno del diálogo fuera de la interfaz: `src/content`, `src/engine`, `src/persistence`.
+- Retratos, sonidos y logo locales. Lectura en voz alta con la voz del sistema, si el dispositivo la tiene.
+
+`capacitor.config.ts` y `electron/` preparan Android y Windows. Este zip no incluye los instaladores.

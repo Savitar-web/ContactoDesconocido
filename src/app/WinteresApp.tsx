@@ -3,12 +3,15 @@ import nightData from "../content/dialogue/night.json";
 import hackData from "../content/dialogue/hack.json";
 import { GREETINGS, liveReplies, type Side } from "../content/dialogue/sideThreads";
 import { speak } from "../audio/tts";
+import { cast, portraits, ROLES } from "../content/characters/cast";
+import { evidenceMap } from "../content/evidence/catalog";
+import { fillLine as fill, waitFor as delayOf } from "../engine/dialogueEngine";
 import { loadSlots, writeSlots, type Slot } from "../persistence/saveManager";
 
 type Msg = { who: string; text: string; at: string; system?: boolean };
 type Profile = { name: string; gender: string; role: string; age: number; birth: string; romance: string; photo?: string };
 type Rel = { trust: number; close: number; tension: number };
-type Beat = { id: string; chat: string; incoming: { who: string; text: string }[]; choices: { text: string; next: string; flag?: string; scene?: string; replies?: { who: string; text: string }[] }[] };
+type Beat = { id: string; chat: string; silent?: boolean; incoming: { who: string; text: string }[]; choices: { text: string; next: string; flag?: string; scene?: string; replies?: { who: string; text: string }[] }[] };
 type Save = {
   profile: Profile; rel: Record<string, Rel>; flags: Record<string, boolean>; chapter: number;
   threads: Record<string, Msg[]>; unread: Record<string, number>; contacts: string[]; chats: string[];
@@ -16,40 +19,10 @@ type Save = {
   memory: Record<string, string>; left: string[]; greeted: string[]; night: string; nightPlayed: Record<string, boolean>;
   mateoSilent: boolean; used: string[];
 };
-const cast: Record<string, { name: string; bio: string }> = {
-  mateo: { name: "Mateo", bio: "El que escribe primero. Cuida de más desde que su hermano se fue." },
-  diego: { name: "Diego", bio: "Amigo de Mateo. Cancela feo y no suaviza. Su papá está en el hospital." },
-  angela: { name: "Ángela", bio: "Traduce al grupo y se cansa de ser útil." },
-  sofia: { name: "Sofía", bio: "Archiva el antes de las cosas. La cadena suelta es su foto." },
-  lucia: { name: "Lucía", bio: "Llega tarde del simulacro. No deja que Antonio hable por ella." },
-  antonio: { name: "Antonio", bio: "Se anticipa al juicio. Protege un secreto que no es del grupo." },
-  valeria: { name: "Valeria", bio: "Anota horas. No se une a bandos." },
-  martina: { name: "Martina", bio: "Prima de Iván. Pesa las palabras. No es puerta de nadie." },
-  ivan: { name: "Iván", bio: "El turno no cuadra. Debe, y el orden no es lindo." },
-};
-const portraits: Record<string, string> = {
-  mateo: "/portraits/mateo.jpg", diego: "/portraits/diego.jpg", antonio: "/portraits/antonio.jpg",
-  angela: "/portraits/angela.jpg", sofia: "/portraits/sofia.jpg", lucia: "/portraits/lucia.jpg",
-  valeria: "/portraits/valeria.jpg", martina: "/portraits/martina.jpg", ivan: "/portraits/ivan.jpg",
-  group: "/icons/colmena.jpg",
-};
 const beats = (nightData as { beats: Beat[] }).beats;
 const beatMap = Object.fromEntries(beats.map((b) => [b.id, b]));
-const ROLES = [
-  ["ordinario", "Ordinario", "Sin atajo. Observas, preguntas y dependes de la gente."],
-  ["tecnico", "Genio informático", "Puedes entrar a cuentas de Winteres. No es magia y deja rastro."],
-  ["observador", "Observador", "Ves horas, fotos y contradicciones que otros pasan."],
-  ["persuasivo", "Persuasivo", "Abres conversaciones que a otros se les cierran."],
-  ["empatico", "Empático", "Lees el cansancio. También puedes equivocarte."],
-  ["investigador", "Investigador", "Ordenas testimonios. No adivinas culpables."],
-];
 function clock() { return new Date().toLocaleTimeString("es-MX", { hour: "2-digit", minute: "2-digit" }); }
-function delayOf(text: string) { return Math.min(4200, 800 + text.length * 22); }
 function label(id: string) { return id === "group" ? "La Colmena" : id === "rafael" ? "Rafael" : id === "mama" ? "Mamá de Mateo" : id === "desconocido" ? "Desconocido" : cast[id]?.name || id; }
-function fill(text: string, p: Profile) {
-  const mujer = p.gender === "mujer";
-  return text.replaceAll("{name}", p.name).replaceAll("{lo}", mujer ? "la" : "lo").replaceAll("{solo}", mujer ? "sola" : "solo");
-}
 function blank(profile: Profile): Save {
   const rel: Record<string, Rel> = {};
   Object.keys(cast).forEach((id) => { rel[id] = { trust: 0, close: 0, tension: 0 }; });
@@ -113,40 +86,52 @@ export default function WinteresApp() {
 
   async function choose(choice: Beat["choices"][number]) {
     if (!state || !beat || typing || busy.current) return;
-    const next: Save = { ...state, threads: { ...state.threads }, flags: { ...state.flags }, nightPlayed: { ...state.nightPlayed }, chats: [...state.chats], contacts: [...state.contacts], lastAt: { ...state.lastAt }, unread: { ...state.unread }, evidence: [...state.evidence], memory: { ...state.memory }, left: [...state.left], greeted: [...state.greeted], pinned: [...state.pinned], rel: { ...state.rel }, used: [...(state.used || []), choice.text] };
-    next.nightPlayed[state.night] = true;
-    next.threads[beat.chat] = [...(next.threads[beat.chat] || []), { who: "me", text: fill(choice.text, state.profile), at: clock() }];
-    next.memory[beat.chat] = choice.text;
-    next.memory.lastChoice = choice.text;
-    if (choice.flag) {
-      next.flags[choice.flag] = true;
-      if (choice.flag === "evidence_van") next.evidence.push({ title: "Van blanca, 22:41", detail: "Foto de Sofía. Placa tapada." });
-      if (choice.flag === "timestamps") next.evidence.push({ title: "Horas de Mateo", detail: "Último mensaje 22:44. Portón reiniciado 22:50." });
-    }
-    if (choice.scene) setScene(choice.scene);
-    if (choice.next === "END") { next.night = "END"; next.mateoSilent = true; next.chapter = 6; }
-    else {
-      const nxt = beatMap[choice.next];
-      next.night = choice.next;
-      if (nxt && !next.chats.includes(nxt.chat)) next.chats.push(nxt.chat);
-      if (nxt && nxt.chat === "group") Object.keys(cast).forEach((id) => { if (!next.contacts.includes(id)) next.contacts.push(id); });
-      if (choice.next === "manana" || choice.next === "plan") next.mateoSilent = true;
-      if (nxt && nxt.chat !== open) next.unread[nxt.chat] = (next.unread[nxt.chat] || 0) + 1;
-      setOpen(nxt?.chat || open);
-    }
-    touch(next, beat.chat);
-    setSheet(false); setState(next);
-    const replies = choice.replies || [];
-    if (!replies.length) return;
+    const chat = beat.chat;
+    const profile = state.profile;
+    const fromId = state.night;
     busy.current = true;
-    for (const inc of replies) {
+    setSheet(false);
+    setState((prev) => {
+      if (!prev) return prev;
+      const flags = { ...prev.flags };
+      const evidence = [...prev.evidence];
+      if (choice.flag) {
+        flags[choice.flag] = true;
+        const ev = evidenceMap[choice.flag];
+        if (ev && !evidence.some((e) => e.title === ev[0])) evidence.push({ title: ev[0], detail: ev[1] });
+      }
+      return {
+        ...prev, flags, evidence,
+        used: [...(prev.used || []), choice.text],
+        nightPlayed: { ...prev.nightPlayed, [fromId]: true },
+        memory: { ...prev.memory, [chat]: choice.text, lastChoice: choice.text },
+        lastAt: { ...prev.lastAt, [chat]: Date.now() },
+        threads: { ...prev.threads, [chat]: [...(prev.threads[chat] || []), { who: "me", text: fill(choice.text, profile), at: clock() }] },
+      };
+    });
+    for (const inc of choice.replies || []) {
+      if (!inc.text) continue;
       setTyper(inc.who);
       setTyping(true);
       await new Promise((r) => setTimeout(r, delayOf(inc.text)));
       setTyping(false);
-      const text = fill(inc.text, state.profile);
-      setState((prev) => prev ? { ...prev, threads: { ...prev.threads, [beat.chat]: [...(prev.threads[beat.chat] || []), { who: inc.who, text, at: clock() }] } } : prev);
+      new Audio("/sounds/pop.wav").play().catch(() => {});
+      const text = fill(inc.text, profile);
+      setState((prev) => prev ? { ...prev, threads: { ...prev.threads, [chat]: [...(prev.threads[chat] || []), { who: inc.who, text, at: clock() }] } } : prev);
     }
+    if (choice.scene) setScene(choice.scene);
+    const nxt = beatMap[choice.next];
+    setState((prev) => {
+      if (!prev) return prev;
+      const chats = [...prev.chats];
+      const contacts = [...prev.contacts];
+      const unread = { ...prev.unread };
+      if (nxt && !chats.includes(nxt.chat)) chats.push(nxt.chat);
+      if (nxt && nxt.chat === "group") Object.keys(cast).forEach((id) => { if (!contacts.includes(id)) contacts.push(id); });
+      if (nxt && nxt.chat !== chat) unread[nxt.chat] = (unread[nxt.chat] || 0) + 1;
+      return { ...prev, chats, contacts, unread, night: choice.next, mateoSilent: nxt ? Boolean(nxt.silent) : false, chapter: Math.min(10, (prev.chapter || 1) + 1) };
+    });
+    if (nxt) setOpen(nxt.chat);
     busy.current = false;
   }
   async function sendSide(side: Side) {
@@ -192,7 +177,8 @@ export default function WinteresApp() {
   const free = ((open === "mateo" && state?.mateoSilent) ? [] : first ? (GREETINGS[open] || []) : (state ? liveReplies(open, { chapter: state.chapter, said: state.memory.lastChoice || state.memory.group }) : [])).filter((c) => !used.has(c.text)).slice(0, 4);
   const storyOpts = (pending && beat ? beat.choices : []).filter((c) => !used.has(c.text)).slice(0, 4);
   const scenes: Record<string, string> = {
-    papeleria: "{name} llega a la papelería a las cuatro. El sol da en la banqueta y el portón de servicio está cerrado, con una cadena nueva. Diego ya está, de brazos cruzados, y no saluda a Iván cuando lo ve cruzar la calle. Ángela llama a {name} por su nombre y le dice que no entre {solo} al callejón. Sofía muestra la foto sin publicarla. Nadie encuentra a Mateo. La caseta repite que a las 22:50 el portón se reinició y que no vieron a nadie.",
+    papeleria: "{name} llega a la papelería a las cuatro. El sol da en la banqueta y el portón de servicio está cerrado, con una cadena nueva. Diego ya está y no saluda a Iván. Ángela te llama por tu nombre y te dice que no entres {solo} al callejón. Sofía muestra la foto sin publicarla. Nadie encuentra a Mateo. La caseta repite que a las 22:50 el portón se reinició.",
+    rescate: "De día, con la caseta avisada, {name} no entra {solo}. Detrás de la papelería hay un cuarto de encargos con reja. Huele a cajas. Mateo está sentado, con la sudadera sucia, y al verte dice tu nombre antes de poder explicar nada. Diego no lo llena de preguntas. Ángela le pasa agua. Nadie graba.",
   };
 
   useEffect(() => {
@@ -297,7 +283,7 @@ export default function WinteresApp() {
               <button className="iconbtn" aria-label="Imagen" onClick={() => { setMind("Mandar una foto se sentiría a exhibirme. Con lo que está pasando, no es oportuno."); setTimeout(() => setMind(""), 5000); }}>▦</button>
             </div>
             <div className={`sheet ${sheet&&!typing?"open":""}`}>
-              {(pending ? storyOpts : free).slice(0, 4).map((c) => <button key={c.text} className="choice rise" onClick={() => pending ? choose(c) : sendSide(c)}>{fill(c.text, state.profile)}</button>)}
+              {pending ? storyOpts.map((c) => <button key={c.text} className="choice rise" onClick={() => choose(c)}>{fill(c.text, state.profile)}</button>) : free.map((c) => <button key={c.text} className="choice rise" onClick={() => sendSide(c)}>{c.text}</button>)}
             </div>
           </div>
         </>}
